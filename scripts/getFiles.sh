@@ -45,7 +45,5 @@ getFiles() {
 
 getFiles $externalStartStationId $externalFinishStationId
 getFiles $externalMiddleStationId $externalFinishStationId
-
-git add -f ./public/static
-git commit -m 'Uploaded new data files'
-git push
+getFiles $externalFinishStationId $externalMiddleStationId
+getFiles $externalFinishStationId $externalStartStationId

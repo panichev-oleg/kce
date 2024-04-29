@@ -12,6 +12,7 @@
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "gh-pages": "^6.1.1",
+    "html-to-json-parser": "^2.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.0",
@@ -27,7 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "load-data": "./scripts/getFiles.sh"
+    "load-data-files": "./scripts/getFiles.sh"
   },
   "eslintConfig": {
     "extends": [

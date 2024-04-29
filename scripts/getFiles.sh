@@ -1,8 +1,9 @@
 #!/bin/bash
 
+# Should be run from root folder of repo !!!
 
-
-externalStartStationId="85" # святошин
+externalStartStationId="83" # борщаговка
+externalMiddleStationId="85" # святошин
 externalFinishStationId="88" # ирпень
 
 DIRECTORY="./public/static"
@@ -20,22 +21,31 @@ fi
 # Get the current date
 CURRENT_DATE=$(date +'%Y-%m-%d')
 
+getFiles() {
+    FROM_ID=$1
+    TO_ID=$2
 
-# Loop through the next 30 days
-for ((i=0; i<=30; i++)); do
-    # Calculate the date for the current iteration
-    DATE=$(date -d "$CURRENT_DATE + $i days" +'%Y-%m-%d')
+    # Loop through the next 30 days
+    for ((i=0; i<=10; i++)); do
+        # Calculate the date for the current iteration
+        DATE=$(date -d "$CURRENT_DATE + $i days" +'%Y-%m-%d')
 
-    # URL to download the file from
-    URL="https://swrailway.gov.ua/timetable/eltrain/?sid1=${externalStartStationId}&sid2=${externalFinishStationId}&eventdate=${DATE}"
+        # URL to download the file from
+        URL="https://swrailway.gov.ua/timetable/eltrain/?sid1=${FROM_ID}&sid2=${TO_ID}&eventdate=${DATE}"
 
-    # Destination where the file will be saved
-    DEST="./public/static/eltrain_from_${externalStartStationId}_to_${externalFinishStationId}_date_${DATE}.txt"
+        # Destination where the file will be saved
+        DEST="./public/static/eltrain_from_${FROM_ID}_to_${TO_ID}_date_${DATE}.txt"
 
-    # Download the file
-    wget "$URL" -O "$DEST"
-done
+        echo URL
 
-#git add ../public/static
-#git status
-#git commit -m 'Uploaded new data files'
+        # Download the file
+        wget "$URL" -O "$DEST"
+    done
+}
+
+getFiles $externalStartStationId $externalFinishStationId
+getFiles $externalMiddleStationId $externalFinishStationId
+
+git add -f ./public/static
+git commit -m 'Uploaded new data files'
+git push

@@ -31,6 +31,7 @@ function App() {
       <br />
       <ScheduleTable data={data} />
       <br />
+      <hr />
       <br />
       <u>В Киев:</u>
       <br />

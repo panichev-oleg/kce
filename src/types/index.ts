@@ -6,4 +6,5 @@ export type Entry = {
   startTimeSec: number;
   middleTimeSec: number;
   endTimeSec: number;
+  infoUrl?: string;
 };

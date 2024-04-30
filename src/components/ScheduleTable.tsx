@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { isInPast, secondsToTime } from "../helpers/utils";
 import { Entry } from "../types";
 import { getStopNames } from "../helpers/data";
+import { externalInfoUrl } from "../helpers/constants";
 
 const renderTimeCell = (timeSec: number) => {
   if (!timeSec) {
@@ -12,17 +13,25 @@ const renderTimeCell = (timeSec: number) => {
   return secondsToTime(timeSec);
 };
 
-const StyledTable = styled.table`
-  th {
-    padding: 1rem 0;
-  }
-  td {
-    padding: 0.25rem 2rem;
-  }
-`;
-
 const StyledTr = styled.tr<{ isInPast: boolean }>`
   ${({ isInPast }) => (isInPast ? "color: lightgray" : "color: black")}
+`;
+
+const StyledTh = styled.th`
+  padding: 1rem 0;
+`;
+
+const StyledTd = styled.td`
+  padding: 0.25rem 2rem;
+`;
+
+const InfoTd = styled(StyledTd)`
+  padding: 0.25rem 0;
+
+  a {
+    color: red;
+    text-decoration: none;
+  }
 `;
 
 type Props = {
@@ -38,12 +47,13 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
 
   return (
     <>
-      <StyledTable>
+      <table>
         <thead>
-          <th>Номер</th>
-          <th>{stopNames.start}</th>
-          <th>{stopNames.middle}</th>
-          <th>{stopNames.end}</th>
+          <StyledTh>Номер</StyledTh>
+          <StyledTh>{stopNames.start}</StyledTh>
+          <StyledTh>{stopNames.middle}</StyledTh>
+          <StyledTh>{stopNames.end}</StyledTh>
+          <StyledTh></StyledTh>
         </thead>
         <tbody>
           {data.map((item) => (
@@ -54,14 +64,25 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
                   : isInPast(item.middleTimeSec)
               }
             >
-              <td>{item.number}</td>
-              <td>{renderTimeCell(item.startTimeSec)}</td>
-              <td>{renderTimeCell(item.middleTimeSec)}</td>
-              <td>{renderTimeCell(item.endTimeSec)}</td>
+              <StyledTd>{item.number}</StyledTd>
+              <StyledTd>{renderTimeCell(item.startTimeSec)}</StyledTd>
+              <StyledTd>{renderTimeCell(item.middleTimeSec)}</StyledTd>
+              <StyledTd>{renderTimeCell(item.endTimeSec)}</StyledTd>
+              <InfoTd>
+                {item.infoUrl && (
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={externalInfoUrl.replace(":href", item.infoUrl)}
+                  >
+                    !
+                  </a>
+                )}
+              </InfoTd>
             </StyledTr>
           ))}
         </tbody>
-      </StyledTable>
+      </table>
     </>
   );
 };

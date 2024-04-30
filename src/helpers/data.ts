@@ -34,6 +34,13 @@ const parseExternalData = (json: JSONContent) => {
       end: row.content[15].content[0].content[0].content[0],
       /* @ts-ignore */
       endTimeSec: timeToSeconds(row.content[13].content[0]),
+      /* @ts-ignore */
+      infoUrl:
+        /* @ts-ignore */
+        row.content[1].content[2]?.attributes?.color === "red"
+          ? /* @ts-ignore */
+            row.content[1].content[0].attributes?.href
+          : undefined,
       middle: "",
       middleTimeSec: 0,
     };

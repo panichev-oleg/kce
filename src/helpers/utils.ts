@@ -1,4 +1,8 @@
 export const isInPast = (seconds: number) => {
+  if (!seconds) {
+    return false;
+  }
+
   const now = new Date();
   const secondsNow = now.getHours() * 60 * 60 + now.getMinutes() * 60;
   return seconds < secondsNow;

@@ -2,12 +2,7 @@ import React from "react";
 import "./App.css";
 import { ScheduleTable } from "./components/ScheduleTable";
 import { Entry } from "./types";
-import { getExternalData } from "./helpers/data";
-import {
-  externalFinishStationId,
-  externalMiddleStationId,
-  // externalStartStationId,
-} from "./helpers/constants";
+import { getExternalBackSchedule, getExternalSchedule } from "./helpers/data";
 
 function App() {
   const [data, setData] = React.useState<Array<Entry>>();
@@ -17,19 +12,10 @@ function App() {
 
   React.useEffect(() => {
     (async () => {
-      const data = await getExternalData(
-        externalMiddleStationId,
-        externalFinishStationId,
-        date
-      );
+      const data = await getExternalSchedule(date);
       setData(data);
 
-      const dataBack = await getExternalData(
-        externalFinishStationId,
-        externalMiddleStationId,
-        date
-      );
-
+      const dataBack = await getExternalBackSchedule(date);
       setDataBack(dataBack);
     })();
   }, [date]);

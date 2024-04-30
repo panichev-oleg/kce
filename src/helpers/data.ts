@@ -1,7 +1,12 @@
 import { JSONContent } from "html-to-json-parser/dist/types";
 import { Entry } from "../types";
 import { HTMLToJSON } from "html-to-json-parser";
-import { externalTablePattern } from "./constants";
+import {
+  externalFinishStationId,
+  externalMiddleStationId,
+  externalStartStationId,
+  externalTablePattern,
+} from "./constants";
 import { timeToSeconds } from "./utils";
 
 const parseExternalData = (json: JSONContent) => {
@@ -29,6 +34,8 @@ const parseExternalData = (json: JSONContent) => {
       end: row.content[15].content[0].content[0].content[0],
       /* @ts-ignore */
       endTimeSec: timeToSeconds(row.content[13].content[0]),
+      middle: "",
+      middleTimeSec: 0,
     };
 
     result.push(entry);
@@ -51,4 +58,79 @@ export const getExternalData = async (
   const data = parseExternalData(json as JSONContent);
 
   return data;
+};
+
+export const getExternalSchedule = async (date: string) => {
+  const dataFromStart = await getExternalData(
+    externalStartStationId,
+    externalFinishStationId,
+    date
+  );
+
+  const dataFromMiddle = await getExternalData(
+    externalMiddleStationId,
+    externalFinishStationId,
+    date
+  );
+
+  const result: Array<Entry> = dataFromMiddle.map((middleEntry) => {
+    const startEntry = dataFromStart.find(
+      ({ number }) => number === middleEntry.number
+    );
+
+    const mergedEntry: Entry = {
+      ...middleEntry,
+      start: "",
+      startTimeSec: 0,
+      ...startEntry,
+      middle: middleEntry.start,
+      middleTimeSec: middleEntry.startTimeSec,
+    };
+
+    return mergedEntry;
+  });
+  return result;
+};
+
+export const getExternalBackSchedule = async (date: string) => {
+  const dataToMiddle = await getExternalData(
+    externalFinishStationId,
+    externalMiddleStationId,
+    date
+  );
+
+  const dataToFinish = await getExternalData(
+    externalFinishStationId,
+    externalStartStationId,
+    date
+  );
+
+  const result: Array<Entry> = dataToMiddle.map((middleEntry) => {
+    const finishEntry = dataToFinish.find(
+      ({ number }) => number === middleEntry.number
+    );
+
+    const mergedEntry: Entry = {
+      ...middleEntry,
+      end: "",
+      endTimeSec: 0,
+      ...finishEntry,
+      middle: middleEntry.end,
+      middleTimeSec: middleEntry.endTimeSec,
+    };
+
+    return mergedEntry;
+  });
+  return result;
+};
+
+export const getStopNames = (data: Array<Entry>) => {
+  const merged = data.reduce((acc, cur) => ({
+    ...acc,
+    start: cur.start || acc.start,
+    middle: cur.middle || acc.middle,
+    end: cur.end || acc.end,
+  }));
+
+  return { start: merged.start, middle: merged.middle, end: merged.end };
 };

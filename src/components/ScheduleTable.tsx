@@ -2,6 +2,15 @@ import * as React from "react";
 import styled from "styled-components";
 import { isInPast, secondsToTime } from "../helpers/utils";
 import { Entry } from "../types";
+import { getStopNames } from "../helpers/data";
+
+const renderTimeCell = (timeSec: number) => {
+  if (!timeSec) {
+    return "";
+  }
+
+  return secondsToTime(timeSec);
+};
 
 const StyledTable = styled.table`
   th {
@@ -25,20 +34,30 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
     return <>no data</>;
   }
 
+  const stopNames = getStopNames(data);
+
   return (
     <>
       <StyledTable>
         <thead>
           <th>Номер</th>
-          <th>{data[0].start}</th>
-          <th>{data[0].end}</th>
+          <th>{stopNames.start}</th>
+          <th>{stopNames.middle}</th>
+          <th>{stopNames.end}</th>
         </thead>
         <tbody>
           {data.map((item) => (
-            <StyledTr isInPast={isInPast(item.startTimeSec)}>
+            <StyledTr
+              isInPast={
+                item.startTimeSec
+                  ? isInPast(item.startTimeSec)
+                  : isInPast(item.middleTimeSec)
+              }
+            >
               <td>{item.number}</td>
-              <td>{secondsToTime(item.startTimeSec)}</td>
-              <td>{secondsToTime(item.endTimeSec)}</td>
+              <td>{renderTimeCell(item.startTimeSec)}</td>
+              <td>{renderTimeCell(item.middleTimeSec)}</td>
+              <td>{renderTimeCell(item.endTimeSec)}</td>
             </StyledTr>
           ))}
         </tbody>

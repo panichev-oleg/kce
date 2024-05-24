@@ -29,8 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "data-files:fetch": "./scripts/getFiles.sh",
-    "data-files:push": "./scripts/pushFiles.sh",
-    "data-files": "npm run data-files:fetch && npm run data-files:push"
+    "data-files": "npm run data-files:fetch && npm run deploy"
   },
   "eslintConfig": {
     "extends": [

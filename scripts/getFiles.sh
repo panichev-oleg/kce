@@ -11,7 +11,7 @@ DIRECTORY="./public/static"
 # Check if the directory exists
 if [ -d "$DIRECTORY" ]; then
     # Clear the directory
-    rm -r "$DIRECTORY"/*
+    rm -r "$DIRECTORY"/*.txt
 
     echo "Directory cleared."
 else

@@ -11,7 +11,7 @@ DIRECTORY="./public/static"
 # Check if the directory exists
 if [ -d "$DIRECTORY" ]; then
     # Clear the directory
-    rm -r "$DIRECTORY"/*.txt
+    rm -rf "$DIRECTORY"/*.txt
 
     echo "Directory cleared."
 else
@@ -21,11 +21,11 @@ fi
 # Get the current date
 CURRENT_DATE=$(date +'%Y-%m-%d')
 
-getFiles() {
+getFilesExternal() {
     FROM_ID=$1
     TO_ID=$2
 
-    # Loop through the next 30 days
+    # Loop through the next 10 days
     for ((i=0; i<=10; i++)); do
         # Calculate the date for the current iteration
         DATE=$(date -d "$CURRENT_DATE + $i days" +'%Y-%m-%d')
@@ -43,7 +43,22 @@ getFiles() {
     done
 }
 
-getFiles $externalStartStationId $externalFinishStationId
-getFiles $externalMiddleStationId $externalFinishStationId
-getFiles $externalFinishStationId $externalMiddleStationId
-getFiles $externalFinishStationId $externalStartStationId
+getFilesInternal() {
+    # URL to download the file from
+    URL="https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=433390657&range=A1:Z23"
+
+    # Destination where the file will be saved
+    DEST="./public/static/eltrain_internal.txt"
+
+    echo URL
+
+    # Download the file
+    wget "$URL" -O "$DEST"
+}
+
+getFilesExternal $externalStartStationId $externalFinishStationId
+getFilesExternal $externalMiddleStationId $externalFinishStationId
+getFilesExternal $externalFinishStationId $externalMiddleStationId
+getFilesExternal $externalFinishStationId $externalStartStationId
+
+getFilesInternal

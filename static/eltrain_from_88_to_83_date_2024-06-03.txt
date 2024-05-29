@@ -246,7 +246,7 @@ td.tm {padding: 0 5 0 5;}
     
     
     </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2023-12-10 по 2024-12-14"></td>
+	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2023-12-10 по 2024-06-07"></td>
 	<td>Тетерів – Київ-Пас. (Приміський)&nbsp;</td>
 	<td>07:02</td>
   <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
@@ -256,7 +256,7 @@ td.tm {padding: 0 5 0 5;}
   <td>07:27</td>
   <td class=tm>0:23</td>
   <td class=qkms>14.1</td>
-    <td>2023-12-10&nbsp;</td><td>2024-12-14&nbsp;</td>
+    <td>2023-12-10&nbsp;</td><td>2024-06-07&nbsp;</td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -284,7 +284,7 @@ td.tm {padding: 0 5 0 5;}
     
     
     </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2023-12-10 по 2024-12-14"></td>
+	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2023-12-10 по 2024-06-07"></td>
 	<td>Тетерів – Борщагівка&nbsp;</td>
 	<td>07:31</td>
   <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
@@ -294,7 +294,7 @@ td.tm {padding: 0 5 0 5;}
   <td>–</td>
   <td class=tm>0:24</td>
   <td class=qkms>14.1</td>
-    <td>2023-12-10&nbsp;</td><td>2024-12-14&nbsp;</td>
+    <td>2023-12-10&nbsp;</td><td>2024-06-07&nbsp;</td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -341,7 +341,7 @@ td.tm {padding: 0 5 0 5;}
     
     
     </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2023-12-10 по 2024-12-14"></td>
+	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2023-12-10 по 2024-06-07"></td>
 	<td>Коростень – Борщагівка&nbsp;</td>
 	<td>11:29</td>
   <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
@@ -351,7 +351,7 @@ td.tm {padding: 0 5 0 5;}
   <td>–</td>
   <td class=tm>0:23</td>
   <td class=qkms>14.1</td>
-    <td>2023-12-10&nbsp;</td><td>2024-12-14&nbsp;</td>
+    <td>2023-12-10&nbsp;</td><td>2024-06-07&nbsp;</td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -360,7 +360,7 @@ td.tm {padding: 0 5 0 5;}
     
     
     </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2023-12-10 по 2024-12-14"></td>
+	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2023-12-10 по 2024-06-07"></td>
 	<td>Тетерів – Борщагівка&nbsp;</td>
 	<td>12:34</td>
   <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
@@ -370,7 +370,7 @@ td.tm {padding: 0 5 0 5;}
   <td>–</td>
   <td class=tm>0:34</td>
   <td class=qkms>14.1</td>
-    <td>2023-12-10&nbsp;</td><td>2024-12-14&nbsp;</td>
+    <td>2023-12-10&nbsp;</td><td>2024-06-07&nbsp;</td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -417,7 +417,7 @@ td.tm {padding: 0 5 0 5;}
     
     
     </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-04-29 по 2024-12-14"></td>
+	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-04-29 по 2024-06-07"></td>
 	<td>Тетерів – Борщагівка&nbsp;</td>
 	<td>20:36</td>
   <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
@@ -427,7 +427,7 @@ td.tm {padding: 0 5 0 5;}
   <td>–</td>
   <td class=tm>0:23</td>
   <td class=qkms>14.1</td>
-    <td>2024-04-29&nbsp;</td><td>2024-12-14&nbsp;</td>
+    <td>2024-04-29&nbsp;</td><td>2024-06-07&nbsp;</td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -436,7 +436,7 @@ td.tm {padding: 0 5 0 5;}
     
     
     </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-04-29 по 2024-12-14"></td>
+	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-04-29 по 2024-06-07"></td>
 	<td>Коростень – Київ-Пас. (Приміський)&nbsp;</td>
 	<td>20:50</td>
   <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
@@ -446,7 +446,7 @@ td.tm {padding: 0 5 0 5;}
   <td>21:16</td>
   <td class=tm>0:24</td>
   <td class=qkms>14.1</td>
-    <td>2024-04-29&nbsp;</td><td>2024-12-14&nbsp;</td>
+    <td>2024-04-29&nbsp;</td><td>2024-06-07&nbsp;</td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -801,7 +801,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2024-05-24', maxDate: '2024-07-24', dateFormat: 'yy-mm-dd' });
+                    minDate: '2024-05-29', maxDate: '2024-07-29', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -866,5 +866,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.048813104629517 секунд
+<!--сгенерено за 0.051430940628052 секунд
 -->

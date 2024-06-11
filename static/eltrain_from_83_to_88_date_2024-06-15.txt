@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x59" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x426" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -243,7 +243,7 @@ td.tm {padding: 0 5 0 5;}
 
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23874">&nbsp;<b>6601</b></a>
-    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2024-06-08 по 2024-12-14">
+    
     
     </td>
 	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-06-08 по 2024-12-14"></td>
@@ -255,44 +255,6 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td>06:19</td>
   <td class=tm>0:22</td>
-  <td class=qkms>14.1</td>
-    <td>2024-06-08&nbsp;</td><td>2024-12-14&nbsp;</td>
-</tr>
-<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
-
-<tr class="onx" style="CURSOR:pointer;" height=20>
-    <td><a class=et title='' href=".?tid=21212">&nbsp;<b>6669</b></a>
-    
-    
-    </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-01-03 по 2024-12-14"></td>
-	<td>Київ-Пас. (Північна) – Немішаєве&nbsp;</td>
-	<td>06:43</td>
-  <td class=tm><a class=et href="?sid=83"><b>Борщагівка</b></a></td>
-  <td class=tm>06:44</td>
-  <td class=tm>07:10</td>
-  <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td>07:11</td>
-  <td class=tm>0:26</td>
-  <td class=qkms>14.1</td>
-    <td>2024-01-03&nbsp;</td><td>2024-12-14&nbsp;</td>
-</tr>
-<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
-
-<tr class="on" style="CURSOR:pointer;" height=20>
-    <td><a class=et title='' href=".?tid=23839">&nbsp;<b>6603</b></a>
-    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2024-06-08 по 2024-12-14">
-    
-    </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-06-08 по 2024-12-14"></td>
-	<td>Київ-Пас. (Північна) – Коростень&nbsp;</td>
-	<td>08:08</td>
-  <td class=tm><a class=et href="?sid=83"><b>Борщагівка</b></a></td>
-  <td class=tm>08:09</td>
-  <td class=tm>08:33</td>
-  <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td>08:34</td>
-  <td class=tm>0:24</td>
   <td class=qkms>14.1</td>
     <td>2024-06-08&nbsp;</td><td>2024-12-14&nbsp;</td>
 </tr>
@@ -338,7 +300,7 @@ td.tm {padding: 0 5 0 5;}
 
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23876">&nbsp;<b>6609</b></a>
-    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2024-06-08 по 2024-12-14">
+    
     
     </td>
 	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-06-08 по 2024-12-14"></td>
@@ -357,7 +319,7 @@ td.tm {padding: 0 5 0 5;}
 
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23840">&nbsp;<b>6613</b></a>
-    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2024-06-08 по 2024-12-14">
+    
     
     </td>
 	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-06-08 по 2024-12-14"></td>
@@ -375,13 +337,13 @@ td.tm {padding: 0 5 0 5;}
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
 <tr class="onx" style="CURSOR:pointer;" height=20>
-    <td><a class=et title='' href=".?tid=23877">&nbsp;<b>6615</b></a>
-    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2024-06-08 по 2024-12-14">
+    <td><a class=et title='' href=".?tid=24172">&nbsp;<b>6615</b></a>
+    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2024-06-12 по 2024-12-14">
     
     </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-06-08 по 2024-12-14"></td>
-	<td>Борщагівка – Тетерів&nbsp;</td>
-	<td>–</td>
+	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-06-12 по 2024-12-14"></td>
+	<td>Київ-Пас. (Приміський) – Тетерів&nbsp;</td>
+	<td>15:30</td>
   <td class=tm><a class=et href="?sid=83"><b>Борщагівка</b></a></td>
   <td class=tm>15:31</td>
   <td class=tm>15:54</td>
@@ -389,13 +351,13 @@ td.tm {padding: 0 5 0 5;}
   <td>15:55</td>
   <td class=tm>0:23</td>
   <td class=qkms>14.1</td>
-    <td>2024-06-08&nbsp;</td><td>2024-12-14&nbsp;</td>
+    <td>2024-06-12&nbsp;</td><td>2024-12-14&nbsp;</td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=24046">&nbsp;<b>6617</b></a>
-    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2024-06-08 по 2024-12-14">
+    
     
     </td>
 	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-06-08 по 2024-12-14"></td>
@@ -414,7 +376,7 @@ td.tm {padding: 0 5 0 5;}
 
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23878">&nbsp;<b>6619</b></a>
-    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2024-06-08 по 2024-12-14">
+    
     
     </td>
 	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-06-08 по 2024-12-14"></td>
@@ -1017,7 +979,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2024-06-07', maxDate: '2024-08-07', dateFormat: 'yy-mm-dd' });
+                    minDate: '2024-06-11', maxDate: '2024-08-11', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -1082,5 +1044,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.0487220287323 секунд
+<!--сгенерено за 0.073378086090088 секунд
 -->

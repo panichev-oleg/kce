@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import { isInPast, secondsToTime } from "../helpers/utils";
 import { Entry } from "../types";
-import { getStopNames } from "../helpers/data";
+import { getExternalStopNames } from "../helpers/data";
 import { externalInfoUrl } from "../helpers/constants";
 
 const renderTimeCell = (timeSec: number) => {
@@ -14,7 +14,8 @@ const renderTimeCell = (timeSec: number) => {
 };
 
 const StyledTr = styled.tr<{ isInPast: boolean }>`
-  ${({ isInPast }) => (isInPast ? "color: lightgray" : "color: black")}
+  color: black;
+  ${({ isInPast }) => (isInPast ? "opacity: .2" : "opacity: 1")};
 `;
 
 const StyledTh = styled.th`
@@ -25,13 +26,9 @@ const StyledTd = styled.td`
   padding: 0.25rem 2rem;
 `;
 
-const InfoTd = styled(StyledTd)`
-  padding: 0.25rem 0;
-
-  a {
-    color: red;
-    text-decoration: none;
-  }
+const InfoLink = styled.a`
+  color: red;
+  text-decoration: none;
 `;
 
 type Props = {
@@ -43,7 +40,7 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
     return <>no data</>;
   }
 
-  const stopNames = getStopNames(data);
+  const stopNames = getExternalStopNames(data);
 
   return (
     <>
@@ -64,21 +61,23 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
                   : isInPast(item.middleTimeSec)
               }
             >
-              <StyledTd>{item.number}</StyledTd>
+              <StyledTd>
+                {item.infoUrl ? (
+                  <InfoLink
+                    href={externalInfoUrl.replace(":href", item.infoUrl)}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {item.number}
+                  </InfoLink>
+                ) : (
+                  item.number
+                )}
+              </StyledTd>
+
               <StyledTd>{renderTimeCell(item.startTimeSec)}</StyledTd>
               <StyledTd>{renderTimeCell(item.middleTimeSec)}</StyledTd>
               <StyledTd>{renderTimeCell(item.endTimeSec)}</StyledTd>
-              <InfoTd>
-                {item.infoUrl && (
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href={externalInfoUrl.replace(":href", item.infoUrl)}
-                  >
-                    !
-                  </a>
-                )}
-              </InfoTd>
             </StyledTr>
           ))}
         </tbody>

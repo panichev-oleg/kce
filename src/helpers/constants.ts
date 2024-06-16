@@ -1,8 +1,12 @@
 export const rootUrlFragment = "kce";
 
-export const externalStartStationId = 83; // борщаговка
-export const externalMiddleStationId = 85; // святошин
-export const externalFinishStationId = 88; // ирпень
+export const externalStartStationName = "Борщаговка";
+export const externalMiddleStationName = "Святошин";
+export const externalFinishStationName = "Ирпень";
+
+export const externalStartStationId = "83"; // борщаговка
+export const externalMiddleStationId = "85"; // святошин
+export const externalFinishStationId = "88"; // ирпень
 
 export const externalDomain = `https://swrailway.gov.ua/timetable/eltrain/`;
 export const externalInfoUrl = `${externalDomain}:href#tabs-notes`;

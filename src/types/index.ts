@@ -1,8 +1,8 @@
 export type Entry = {
   number: string;
-  start: string;
-  middle: string;
-  end: string;
+  startId: string;
+  middleId: string;
+  endId: string;
   startTimeSec: number;
   middleTimeSec: number;
   endTimeSec: number;

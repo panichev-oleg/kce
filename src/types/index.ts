@@ -8,3 +8,14 @@ export type Entry = {
   endTimeSec: number;
   infoUrl?: string;
 };
+
+export type TransferType = "middleToStart" | "endToMiddle";
+
+export type MergedScheduleItem = {
+  internalScheduleRow?: Entry;
+  externalScheduleRow: Entry;
+  transferTimeSec?: number;
+  transferType?: TransferType;
+};
+
+export type MergedSchedule = Array<MergedScheduleItem>;

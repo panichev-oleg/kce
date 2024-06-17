@@ -1,16 +1,62 @@
 import * as React from "react";
 import styled from "styled-components";
 import { isInPast, secondsToTime } from "../helpers/utils";
-import { Entry } from "../types";
+import {
+  Entry,
+  MergedSchedule,
+  MergedScheduleItem,
+  TransferType,
+} from "../types";
 import { getExternalStopNames } from "../helpers/data";
-import { externalInfoUrl } from "../helpers/constants";
+import {
+  externalInfoUrl,
+  fastTransferSec,
+  slowTransferSec,
+} from "../helpers/constants";
 
-const renderTimeCell = (timeSec: number) => {
+const TransferInfo = styled.span<{ isHighligted?: boolean }>`
+  font-size: 0.75rem;
+  ${({ isHighligted }) => `${isHighligted && "color: red;"}`};
+`;
+
+const renderTimeCell = (timeSec?: number) => {
   if (!timeSec) {
     return "";
   }
 
   return secondsToTime(timeSec);
+};
+
+const renderTransferInfo = (
+  row: MergedScheduleItem,
+  internalStopType: "middle" | "end"
+) => {
+  const {
+    transferType,
+    transferTimeSec,
+    externalScheduleRow,
+    internalScheduleRow,
+  } = row;
+
+  if (!transferTimeSec) {
+    return <></>;
+  }
+
+  if (
+    (transferType === "middleToStart" && internalStopType === "middle") ||
+    (transferType === "endToMiddle" && internalStopType === "end")
+  ) {
+    const isHighlighted =
+      transferTimeSec <= fastTransferSec || transferTimeSec >= slowTransferSec;
+    return (
+      <span>
+        →
+        <TransferInfo isHighligted={isHighlighted}>
+          {transferTimeSec / 60} мин
+        </TransferInfo>
+      </span>
+    );
+  }
 };
 
 const StyledTr = styled.tr<{ isInPast: boolean }>`
@@ -19,11 +65,18 @@ const StyledTr = styled.tr<{ isInPast: boolean }>`
 `;
 
 const StyledTh = styled.th`
-  padding: 1rem 0;
+  padding: 1rem 0.25rem;
+  text-align: center;
 `;
 
 const StyledTd = styled.td`
   padding: 0.25rem 2rem;
+`;
+
+const BorderTd = styled.td`
+  width: 1px;
+  border-left: 1px solid black;
+  padding-right: 1rem;
 `;
 
 const InfoLink = styled.a`
@@ -32,56 +85,99 @@ const InfoLink = styled.a`
 `;
 
 type Props = {
-  data?: Array<Entry>;
+  data?: MergedSchedule;
 };
 
 export const ScheduleTable: React.FC<Props> = ({ data }) => {
+  const { internalScheduleRow } =
+    data?.find(({ internalScheduleRow }) => internalScheduleRow) || {};
+
   if (!data) {
     return <>no data</>;
   }
 
-  const stopNames = getExternalStopNames(data);
+  const externalStopNames = getExternalStopNames([data[0].externalScheduleRow]);
+  const internalStopNames =
+    internalScheduleRow && getExternalStopNames([internalScheduleRow]);
 
   return (
     <>
       <table>
         <thead>
           <StyledTh>Номер</StyledTh>
-          <StyledTh>{stopNames.start}</StyledTh>
-          <StyledTh>{stopNames.middle}</StyledTh>
-          <StyledTh>{stopNames.end}</StyledTh>
-          <StyledTh></StyledTh>
+
+          <BorderTd />
+
+          <StyledTh>{internalStopNames?.start}</StyledTh>
+          <StyledTh>{internalStopNames?.middle}</StyledTh>
+          <StyledTh>{internalStopNames?.end}</StyledTh>
+
+          <BorderTd />
+
+          <StyledTh>{externalStopNames.start}</StyledTh>
+          <StyledTh>{externalStopNames.middle}</StyledTh>
+          <StyledTh>{externalStopNames.end}</StyledTh>
         </thead>
         <tbody>
-          {data.map((item) => (
-            <StyledTr
-              isInPast={
-                item.startTimeSec
-                  ? isInPast(item.startTimeSec)
-                  : isInPast(item.middleTimeSec)
-              }
-            >
-              <StyledTd>
-                {item.infoUrl ? (
-                  <InfoLink
-                    href={externalInfoUrl.replace(":href", item.infoUrl)}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {item.number}
-                  </InfoLink>
-                ) : (
-                  item.number
-                )}
-              </StyledTd>
+          {data.map((item) => {
+            const {
+              externalScheduleRow: external,
+              internalScheduleRow: internal,
+            } = item;
+            return (
+              <StyledTr
+                isInPast={
+                  external.startTimeSec
+                    ? isInPast(external.startTimeSec)
+                    : isInPast(external.middleTimeSec)
+                }
+              >
+                <StyledTd>
+                  {external.infoUrl ? (
+                    <InfoLink
+                      href={externalInfoUrl.replace(":href", external.infoUrl)}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {external.number}
+                    </InfoLink>
+                  ) : (
+                    external.number
+                  )}
+                </StyledTd>
 
-              <StyledTd>{renderTimeCell(item.startTimeSec)}</StyledTd>
-              <StyledTd>{renderTimeCell(item.middleTimeSec)}</StyledTd>
-              <StyledTd>{renderTimeCell(item.endTimeSec)}</StyledTd>
-            </StyledTr>
-          ))}
+                <BorderTd />
+
+                <StyledTd>{renderTimeCell(internal?.startTimeSec)} </StyledTd>
+                <StyledTd>
+                  <>
+                    {renderTimeCell(internal?.middleTimeSec)}{" "}
+                    {renderTransferInfo(item, "middle")}
+                  </>
+                </StyledTd>
+                <StyledTd>
+                  {renderTimeCell(internal?.endTimeSec)}{" "}
+                  {renderTransferInfo(item, "end")}
+                </StyledTd>
+
+                <BorderTd />
+
+                <StyledTd>{renderTimeCell(external.startTimeSec)}</StyledTd>
+                <StyledTd>{renderTimeCell(external.middleTimeSec)}</StyledTd>
+                <StyledTd>{renderTimeCell(external.endTimeSec)}</StyledTd>
+              </StyledTr>
+            );
+          })}
         </tbody>
       </table>
     </>
   );
 };
+
+// HERE:
+
+// 1. Transfer from middle OR end stop +
+// 2. internal - check for weekend +
+// 3. Show transfer time +
+// 4. Separator between internal and external +
+// 5. Show schedule back

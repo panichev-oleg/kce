@@ -174,10 +174,95 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
   );
 };
 
+export const ScheduleTableBack: React.FC<Props> = ({ data }) => {
+  const { internalScheduleRow } =
+    data?.find(({ internalScheduleRow }) => internalScheduleRow) || {};
+
+  if (!data) {
+    return <>no data</>;
+  }
+
+  const externalStopNames = getExternalStopNames(
+    data.map(({ externalScheduleRow }) => externalScheduleRow)
+  );
+  const internalStopNames =
+    internalScheduleRow && getExternalStopNames([internalScheduleRow]);
+
+  return (
+    <>
+      <table>
+        <thead>
+          <StyledTh>Номер</StyledTh>
+
+          <BorderTd />
+
+          <StyledTh>{externalStopNames.start}</StyledTh>
+          <StyledTh>{externalStopNames.middle}</StyledTh>
+          <StyledTh>{externalStopNames.end}</StyledTh>
+
+          <BorderTd />
+
+          <StyledTh>{internalStopNames?.start}</StyledTh>
+          <StyledTh>{internalStopNames?.middle}</StyledTh>
+          <StyledTh>{internalStopNames?.end}</StyledTh>
+        </thead>
+
+        <tbody>
+          {data.map((item) => {
+            const {
+              externalScheduleRow: external,
+              internalScheduleRow: internal,
+            } = item;
+            return (
+              <StyledTr
+                isInPast={
+                  external.startTimeSec
+                    ? isInPast(external.startTimeSec)
+                    : isInPast(external.middleTimeSec)
+                }
+              >
+                <StyledTd>
+                  {external.infoUrl ? (
+                    <InfoLink
+                      href={externalInfoUrl.replace(":href", external.infoUrl)}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {external.number}
+                    </InfoLink>
+                  ) : (
+                    external.number
+                  )}
+                </StyledTd>
+
+                <BorderTd />
+
+                <StyledTd>{renderTimeCell(external.startTimeSec)} </StyledTd>
+                <StyledTd>
+                  <>
+                    {renderTimeCell(external.middleTimeSec)}{" "}
+                    {renderTransferInfo(item, "middle")}
+                  </>
+                </StyledTd>
+                <StyledTd>
+                  {renderTimeCell(external.endTimeSec)}{" "}
+                  {renderTransferInfo(item, "end")}
+                </StyledTd>
+
+                <BorderTd />
+
+                <StyledTd>{renderTimeCell(internal?.startTimeSec)}</StyledTd>
+                <StyledTd>{renderTimeCell(internal?.middleTimeSec)}</StyledTd>
+                <StyledTd>{renderTimeCell(internal?.endTimeSec)}</StyledTd>
+              </StyledTr>
+            );
+          })}
+        </tbody>
+      </table>
+    </>
+  );
+};
+
 // HERE:
 
-// 1. Transfer from middle OR end stop +
-// 2. internal - check for weekend +
-// 3. Show transfer time +
-// 4. Separator between internal and external +
-// 5. Show schedule back
+// Make ScheduleTable and (if possible) mergeSchedule() reusable

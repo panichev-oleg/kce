@@ -16,6 +16,10 @@ export const internalStartStationId = "433390657R16"; // Видубичі
 export const internalMiddleStationId = "433390657R22"; // Борщагівка
 export const internalFinishStationId = "433390657R3"; // Святошин
 
+export const internalBackStartStationId = "28169577R3"; // Святошин
+export const internalBackMiddleStationId = "28169577R4"; // Борщагівка
+export const internalBackFinishStationId = "28169577R10"; // Видубичі
+
 export const internalMiddleToFinishTimeMin = 6;
 
 export const externalDomain = `https://swrailway.gov.ua/timetable/eltrain/`;

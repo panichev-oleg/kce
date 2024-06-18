@@ -9,16 +9,19 @@ import {
   externalStartStationId,
   externalStartStationName,
   externalTablePattern,
+  internalBackFinishStationId,
+  internalBackMiddleStationId,
+  internalBackStartStationId,
   internalFinishStationId,
   internalFinishStationName,
   internalMiddleStationId,
+  internalStartStationId,
   internalMiddleStationName,
   internalMiddleToFinishTimeMin,
-  internalStartStationId,
   internalStartStationName,
   internalTablePattern,
 } from "./constants";
-import { secondsToTime, timeToSeconds } from "./utils";
+import { timeToSeconds } from "./utils";
 
 const parseExternalData = (json: JSONContent) => {
   const result: Array<Entry> = [];
@@ -71,6 +74,14 @@ const parseInternalData = (
 ) => {
   const resultObj: Record<string, Entry> = {};
 
+  const [startStationId, middleStationId, finishStationId] = !isBackSchedule
+    ? [internalStartStationId, internalMiddleStationId, internalFinishStationId]
+    : [
+        internalBackStartStationId,
+        internalBackMiddleStationId,
+        internalBackFinishStationId,
+      ];
+
   const workingDaysOnlyColumnNumbers: Array<number> = [];
   const allDaysColumnNumbers: Array<number> = [];
 
@@ -106,20 +117,22 @@ const parseInternalData = (
       row.type !== "tr" ||
       !name ||
       ![
-        internalStartStationId,
-        internalMiddleStationId,
+        startStationId,
+        middleStationId,
+        finishStationId,
         /* @ts-ignore */
       ].includes(id)
     ) {
       return;
     }
+
     /* @ts-ignore */
     row.content.forEach((item, idx) => {
       if (
         /* @ts-ignore */
         item.type !== "td" ||
         /* @ts-ignore */
-        !["s7", "s9"].includes(item.attributes.class) ||
+        !["s5", "s7", "s9"].includes(item.attributes.class) ||
         (isWeekend && workingDaysOnlyColumnNumbers.includes(idx))
       ) {
         return;
@@ -127,7 +140,12 @@ const parseInternalData = (
 
       /* @ts-ignore */
       const value = item.content[0];
-      const key = id === internalStartStationId ? "start" : "middle";
+      const key =
+        id === startStationId
+          ? "start"
+          : id === middleStationId
+          ? "middle"
+          : "end";
 
       resultObj[idx] = {
         ...(resultObj[idx] || {}),
@@ -145,7 +163,7 @@ const parseInternalData = (
     result.forEach((item, idx) => {
       result[idx] = {
         ...item,
-        endId: internalFinishStationId,
+        endId: finishStationId,
         endTimeSec: item.middleTimeSec + internalMiddleToFinishTimeMin * 60,
       };
     });
@@ -170,16 +188,24 @@ export const getExternalData = async (
   return data;
 };
 
-export const getInternalData = async (date: string) => {
+export const getInternalData = async (
+  date: string,
+  isBackSchedule: boolean
+) => {
   const url = `${process.env.PUBLIC_URL}/static/eltrain_internal.txt`;
+  const urlBack = `${process.env.PUBLIC_URL}/static/eltrain_internal_back.txt`;
 
-  const response = await fetch(url);
+  const response = await fetch(isBackSchedule ? urlBack : url);
   const html = await response.text();
   const table = html.match(internalTablePattern)?.[0] || "";
   const json = await HTMLToJSON(table);
 
   const isWeekend = [6, 0].includes(new Date(date).getDay());
-  const data = parseInternalData(json as JSONContent, false, isWeekend);
+  const data = parseInternalData(
+    json as JSONContent,
+    isBackSchedule,
+    isWeekend
+  );
 
   return data;
 };
@@ -269,6 +295,15 @@ const getStopNameById = (stopId: string) => {
     case internalFinishStationId:
       return internalFinishStationName;
 
+    case internalBackFinishStationId:
+      return internalStartStationName;
+
+    case internalBackMiddleStationId:
+      return internalMiddleStationName;
+
+    case internalBackStartStationId:
+      return internalFinishStationName;
+
     default:
       return stopId;
   }
@@ -289,36 +324,12 @@ export const getExternalStopNames = (data: Array<Entry>) => {
   };
 };
 
-export const getInternalSchedule = async (date: string) => {
-  const data = await getInternalData(date);
+export const getInternalSchedule = async (
+  date: string,
+  isBackSchedule: boolean
+) => {
+  const data = await getInternalData(date, isBackSchedule);
   return data;
-  // internalStartStationId,
-  // internalMiddleStationId
-  // date
-  /* 
-  const dataToFinish = await getInternalData(
-    externalFinishStationId,
-    externalStartStationId,
-    date
-  );
-
-  const result: Array<Entry> = dataToMiddle.map((middleEntry) => {
-    const finishEntry = dataToFinish.find(
-      ({ number }) => number === middleEntry.number
-    );
-
-    const mergedEntry: Entry = {
-      ...middleEntry,
-      end: "",
-      endTimeSec: 0,
-      ...finishEntry,
-      middle: middleEntry.end,
-      middleTimeSec: middleEntry.endTimeSec,
-    };
-
-    return mergedEntry;
-  });
-  return result; */
 };
 
 export const mergeSchedule = (
@@ -352,6 +363,48 @@ export const mergeSchedule = (
         ? externalTimeSec - internalItem.endTimeSec
         : undefined;
 
+    const res = {
+      externalScheduleRow: externalItem,
+      internalScheduleRow: internalItem,
+      transferType,
+      transferTimeSec,
+    };
+    return res;
+  });
+
+  return result;
+};
+
+export const mergeScheduleBack = (
+  internalSchedule: Array<Entry>,
+  externalSchedule: Array<Entry>
+): MergedSchedule => {
+  const result = externalSchedule.map((externalItem) => {
+    const externalTimeSec =
+      externalItem.endTimeSec || externalItem.middleTimeSec;
+
+    const internalScheduleSorted = internalSchedule
+      .filter(({ startTimeSec }) => startTimeSec - externalTimeSec > 0)
+      .sort(
+        (a, b) =>
+          externalTimeSec - b.endTimeSec - (externalTimeSec - a.endTimeSec)
+      );
+
+    const internalItem = internalScheduleSorted[0];
+
+    const transferType: TransferType | undefined =
+      internalItem?.middleTimeSec && externalItem.endTimeSec
+        ? "endToMiddle"
+        : internalItem?.startTimeSec && externalItem.middleTimeSec
+        ? "middleToStart"
+        : undefined;
+
+    const transferTimeSec =
+      transferType === "endToMiddle"
+        ? internalItem.middleTimeSec - externalTimeSec
+        : transferType === "middleToStart"
+        ? internalItem.middleTimeSec - externalTimeSec
+        : undefined;
     const res = {
       externalScheduleRow: externalItem,
       internalScheduleRow: internalItem,

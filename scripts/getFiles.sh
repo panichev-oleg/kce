@@ -6,6 +6,12 @@ externalStartStationId="83" # борщаговка
 externalMiddleStationId="85" # святошин
 externalFinishStationId="88" # ирпень
 
+INTERNAL_URL="https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=433390657&range=A1:Z23"
+INTERNAL_BACK_URL="https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=28169577&range=A1:Z23"
+
+INTERNAL_FILE_NAME="./public/static/eltrain_internal.txt"
+INTERNAL_BACK_FILE_NAME="./public/static/eltrain_internal_back.txt"
+
 DIRECTORY="./public/static"
 
 # Check if the directory exists
@@ -45,10 +51,10 @@ getFilesExternal() {
 
 getFilesInternal() {
     # URL to download the file from
-    URL="https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=433390657&range=A1:Z23"
+    URL=$1
 
     # Destination where the file will be saved
-    DEST="./public/static/eltrain_internal.txt"
+    DEST=$2
 
     echo URL
 
@@ -61,4 +67,5 @@ getFilesExternal $externalMiddleStationId $externalFinishStationId
 getFilesExternal $externalFinishStationId $externalMiddleStationId
 getFilesExternal $externalFinishStationId $externalStartStationId
 
-getFilesInternal
+getFilesInternal $INTERNAL_URL $INTERNAL_FILE_NAME
+getFilesInternal $INTERNAL_BACK_URL $INTERNAL_BACK_FILE_NAME

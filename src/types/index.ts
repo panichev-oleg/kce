@@ -9,7 +9,11 @@ export type Entry = {
   infoUrl?: string;
 };
 
-export type TransferType = "middleToStart" | "endToMiddle";
+export type TransferType =
+  | "middleToStart"
+  | "endToMiddle"
+  | "endToMiddle"
+  | "middleToStart";
 
 export type MergedScheduleItem = {
   internalScheduleRow?: Entry;

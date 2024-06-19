@@ -9,8 +9,14 @@ import {
   slowTransferSec,
 } from "../helpers/constants";
 
+const TransferInfoContainer = styled.span`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 const TransferInfo = styled.span<{ isHighligted?: boolean }>`
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   ${({ isHighligted }) => `${isHighligted && "color: red;"}`};
 `;
 
@@ -39,12 +45,12 @@ const renderTransferInfo = (
     const isHighlighted =
       transferTimeSec <= fastTransferSec || transferTimeSec >= slowTransferSec;
     return (
-      <span>
-        →
+      <TransferInfoContainer>
+        ⟶
         <TransferInfo isHighligted={isHighlighted}>
           {transferTimeSec / 60} мин
         </TransferInfo>
-      </span>
+      </TransferInfoContainer>
     );
   }
 };
@@ -61,12 +67,12 @@ const StyledTh = styled.th`
 
 const StyledTd = styled.td`
   padding: 0.25rem 2rem;
+  vertical-align: top;
 `;
 
-const BorderTd = styled.td`
-  width: 1px;
-  border-left: 1px solid black;
-  padding-right: 1rem;
+const TransferContainer = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 const InfoLink = styled.a`
@@ -78,7 +84,7 @@ type Props = {
   data?: MergedSchedule;
 };
 
-export const ScheduleTable: React.FC<Props> = ({ data }) => {
+export const ScheduleTableCompact: React.FC<Props> = ({ data }) => {
   const { internalScheduleRow } =
     data?.find(({ internalScheduleRow }) => internalScheduleRow) || {};
 
@@ -96,16 +102,10 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
         <thead>
           <StyledTh>Номер</StyledTh>
 
-          <BorderTd />
-
           <StyledTh>{internalStopNames?.start}</StyledTh>
           <StyledTh>{internalStopNames?.middle}</StyledTh>
           <StyledTh>{internalStopNames?.end}</StyledTh>
 
-          <BorderTd />
-
-          <StyledTh>{externalStopNames.start}</StyledTh>
-          <StyledTh>{externalStopNames.middle}</StyledTh>
           <StyledTh>{externalStopNames.end}</StyledTh>
         </thead>
         <tbody>
@@ -136,24 +136,36 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
                   )}
                 </StyledTd>
 
-                <BorderTd />
-
                 <StyledTd>{renderTimeCell(internal?.startTimeSec)} </StyledTd>
+
                 <StyledTd>
-                  <>
-                    {renderTimeCell(internal?.middleTimeSec)}{" "}
-                    {renderTransferInfo(item, "middle")}
-                  </>
-                </StyledTd>
-                <StyledTd>
-                  {renderTimeCell(internal?.endTimeSec)}{" "}
-                  {renderTransferInfo(item, "end")}
+                  <TransferContainer>
+                    {renderTimeCell(internal?.middleTimeSec)}
+                    {!!external.startTimeSec && (
+                      <>
+                        {renderTransferInfo(item, "middle")}
+                        {renderTimeCell(external.startTimeSec)}
+                      </>
+                    )}
+                  </TransferContainer>
                 </StyledTd>
 
-                <BorderTd />
+                <StyledTd>
+                  <TransferContainer>
+                    {renderTimeCell(
+                      !external.startTimeSec && !!external.middleTimeSec
+                        ? internal?.endTimeSec
+                        : external.middleTimeSec
+                    )}
+                    {!external.startTimeSec && !!external.middleTimeSec && (
+                      <>
+                        {renderTransferInfo(item, "end")}
+                        {renderTimeCell(external.middleTimeSec)}
+                      </>
+                    )}
+                  </TransferContainer>
+                </StyledTd>
 
-                <StyledTd>{renderTimeCell(external.startTimeSec)}</StyledTd>
-                <StyledTd>{renderTimeCell(external.middleTimeSec)}</StyledTd>
                 <StyledTd>{renderTimeCell(external.endTimeSec)}</StyledTd>
               </StyledTr>
             );
@@ -164,7 +176,7 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
   );
 };
 
-export const ScheduleTableBack: React.FC<Props> = ({ data }) => {
+export const ScheduleTableBackCompact: React.FC<Props> = ({ data }) => {
   const { internalScheduleRow } =
     data?.find(({ internalScheduleRow }) => internalScheduleRow) || {};
 
@@ -184,16 +196,10 @@ export const ScheduleTableBack: React.FC<Props> = ({ data }) => {
         <thead>
           <StyledTh>Номер</StyledTh>
 
-          <BorderTd />
-
           <StyledTh>{externalStopNames.start}</StyledTh>
           <StyledTh>{externalStopNames.middle}</StyledTh>
           <StyledTh>{externalStopNames.end}</StyledTh>
 
-          <BorderTd />
-
-          <StyledTh>{internalStopNames?.start}</StyledTh>
-          <StyledTh>{internalStopNames?.middle}</StyledTh>
           <StyledTh>{internalStopNames?.end}</StyledTh>
         </thead>
 
@@ -225,24 +231,34 @@ export const ScheduleTableBack: React.FC<Props> = ({ data }) => {
                   )}
                 </StyledTd>
 
-                <BorderTd />
-
                 <StyledTd>{renderTimeCell(external.startTimeSec)} </StyledTd>
+
                 <StyledTd>
-                  <>
-                    {renderTimeCell(external.middleTimeSec)}{" "}
-                    {renderTransferInfo(item, "middle")}
-                  </>
-                </StyledTd>
-                <StyledTd>
-                  {renderTimeCell(external.endTimeSec)}{" "}
-                  {renderTransferInfo(item, "end")}
+                  <TransferContainer>
+                    {renderTimeCell(external.middleTimeSec)}
+                    {!!external.middleTimeSec && !external.endTimeSec && (
+                      <>
+                        {renderTransferInfo(item, "middle")}
+                        {renderTimeCell(internal?.startTimeSec)}
+                      </>
+                    )}
+                  </TransferContainer>
                 </StyledTd>
 
-                <BorderTd />
+                <StyledTd>
+                  <TransferContainer>
+                    {renderTimeCell(
+                      external.endTimeSec || internal?.middleTimeSec
+                    )}
+                    {!!external.endTimeSec && (
+                      <>
+                        {renderTransferInfo(item, "end")}
+                        {renderTimeCell(internal?.middleTimeSec)}
+                      </>
+                    )}
+                  </TransferContainer>
+                </StyledTd>
 
-                <StyledTd>{renderTimeCell(internal?.startTimeSec)}</StyledTd>
-                <StyledTd>{renderTimeCell(internal?.middleTimeSec)}</StyledTd>
                 <StyledTd>{renderTimeCell(internal?.endTimeSec)}</StyledTd>
               </StyledTr>
             );
@@ -252,7 +268,5 @@ export const ScheduleTableBack: React.FC<Props> = ({ data }) => {
     </>
   );
 };
-
-// HERE:
 
 // Make ScheduleTable and (if possible) mergeSchedule() reusable

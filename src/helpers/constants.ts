@@ -29,8 +29,5 @@ export const externalTablePattern = /(<table[^>+]id=geo2g.+?<\/table>)/ms;
 export const internalTablePattern =
   /(<table class="waffle" cellspacing="0" cellpadding="0">.+?<\/table>)/ms;
 
-export const internalUrl =
-  "https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=433390657&range=A1:Z23";
-
 export const fastTransferSec = 2 * 60;
 export const slowTransferSec = 20 * 60;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { ScheduleTable, ScheduleTableBack } from "./components/ScheduleTable";
-import { Entry, MergedSchedule } from "./types";
+import { MergedSchedule } from "./types";
 import {
   getExternalBackSchedule,
   getExternalSchedule,
@@ -9,10 +9,15 @@ import {
   mergeSchedule,
   mergeScheduleBack,
 } from "./helpers/data";
+import {
+  ScheduleTableBackCompact,
+  ScheduleTableCompact,
+} from "./components/ScheduleTableCompact";
 
 function App() {
   const [data, setData] = React.useState<MergedSchedule>();
   const [dataBack, setDataBack] = React.useState<MergedSchedule>();
+  const [isCompactView, setIsCompactView] = React.useState(true);
 
   const date = new Date().toISOString().split("T")[0];
 
@@ -35,43 +40,40 @@ function App() {
     })();
   }, [date]);
 
+  const ScheduleTableComponent = isCompactView
+    ? ScheduleTableCompact
+    : ScheduleTable;
+  const ScheduleTableBackComponent = isCompactView
+    ? ScheduleTableBackCompact
+    : ScheduleTableBack;
+
   return (
     <div className="App">
       <h2>KCE</h2>
       <u>Дата: {date}</u>
       <br />
       <br />
+      <label>
+        <input
+          type="checkbox"
+          checked={isCompactView}
+          onChange={(e) => setIsCompactView(e.target.checked)}
+        />{" "}
+        Компактный вид
+      </label>
+      <br />
+      <br />
       <u>Из Киева:</u>
       <br />
       <br />
-      <ScheduleTable data={data} />
-      <br />
-      <a
-        href="https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=433390657&range=A1:Z23"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Розклад руху міської електрички. Маршрут: Е2 (за годинниковою стрілкою)
-      </a>
-      <br />
+      <ScheduleTableComponent data={data} />
       <br />
       <hr />
       <br />
       <u>В Киев:</u>
       <br />
       <br />
-      <ScheduleTableBack data={dataBack} />
-      <br />
-      <a
-        href="https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=28169577&range=A1:Z23"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Розклад руху міської електрички. Маршрут: Е1 (проти годинникової
-        стрілки)
-      </a>
-      <br />
-      <br />
+      <ScheduleTableBackComponent data={dataBack} />
     </div>
   );
 }

@@ -17,6 +17,7 @@ const TransferInfoContainer = styled.span`
 
 const TransferInfo = styled.span<{ isHighligted?: boolean }>`
   font-size: 0.7rem;
+  white-space: nowrap;
   ${({ isHighligted }) => `${isHighligted && "color: red;"}`};
 `;
 
@@ -66,7 +67,7 @@ const StyledTh = styled.th`
 `;
 
 const StyledTd = styled.td`
-  padding: 0.25rem 2rem;
+  padding: 0.25rem 0.5rem;
   vertical-align: top;
 `;
 

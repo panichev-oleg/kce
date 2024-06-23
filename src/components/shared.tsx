@@ -16,6 +16,7 @@ export const Link = styled.a`
   &:visited,
   &:active {
     color: blue;
+    text-decoration: underline;
   }
 
   &:hover {

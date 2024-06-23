@@ -79,6 +79,7 @@ const TransferContainer = styled.div`
 const InfoLink = styled.a`
   color: red;
   text-decoration: none;
+  font-weight: bold;
 `;
 
 type Props = {
@@ -130,7 +131,7 @@ export const ScheduleTableCompact: React.FC<Props> = ({ data }) => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      {external.number}
+                      {external.number} (!)
                     </InfoLink>
                   ) : (
                     external.number
@@ -225,7 +226,7 @@ export const ScheduleTableBackCompact: React.FC<Props> = ({ data }) => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      {external.number}
+                      {external.number} (!)
                     </InfoLink>
                   ) : (
                     external.number

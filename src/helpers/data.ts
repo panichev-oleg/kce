@@ -403,7 +403,7 @@ export const mergeScheduleBack = (
       transferType === "endToMiddle"
         ? internalItem.middleTimeSec - externalTimeSec
         : transferType === "middleToStart"
-        ? internalItem.middleTimeSec - externalTimeSec
+        ? internalItem.startTimeSec - externalTimeSec
         : undefined;
     const res = {
       externalScheduleRow: externalItem,

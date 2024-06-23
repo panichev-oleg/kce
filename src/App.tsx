@@ -13,6 +13,21 @@ import {
   ScheduleTableBackCompact,
   ScheduleTableCompact,
 } from "./components/ScheduleTableCompact";
+import { Collapsible } from "./components/Collapsible";
+import {
+  externalFinishStationId,
+  externalFinishStationName,
+  externalMiddleStationId,
+  externalMiddleStationName,
+  externalStartStationId,
+  externalStartStationName,
+  internalBackUrl,
+  internalFinishStationName,
+  internalStartStationName,
+  internalUrl,
+} from "./helpers/constants";
+import { getExternalUrl } from "./helpers/utils";
+import { Link, ScheduleList } from "./components/shared";
 
 function App() {
   const [data, setData] = React.useState<MergedSchedule>();
@@ -68,12 +83,91 @@ function App() {
       <br />
       <ScheduleTableComponent data={data} />
       <br />
+      <Collapsible title="Посмотреть полное расписание">
+        <ScheduleList>
+          <li>
+            <Link href={internalUrl} target="_blank" rel="noreferrer">
+              Городская электричка ({internalStartStationName} -{" "}
+              {internalFinishStationName})
+            </Link>
+          </li>
+          <li>
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href={getExternalUrl(
+                externalStartStationId,
+                externalFinishStationId,
+                date
+              )}
+            >
+              Электричка ({externalStartStationName} -{" "}
+              {externalFinishStationName})
+            </Link>
+          </li>
+          <li>
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href={getExternalUrl(
+                externalMiddleStationId,
+                externalFinishStationId,
+                date
+              )}
+            >
+              Электричка ({externalMiddleStationName} -{" "}
+              {externalFinishStationName})
+            </Link>
+          </li>
+        </ScheduleList>
+      </Collapsible>
+      <br />
       <hr />
       <br />
       <u>В Киев:</u>
       <br />
       <br />
       <ScheduleTableBackComponent data={dataBack} />
+      <br />
+      <Collapsible title="Посмотреть полное расписание">
+        <ScheduleList>
+          <li>
+            <Link href={internalBackUrl} target="_blank" rel="noreferrer">
+              Городская электричка ({internalFinishStationName} -{" "}
+              {internalStartStationName})
+            </Link>
+          </li>
+          <li>
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href={getExternalUrl(
+                externalFinishStationId,
+                externalStartStationId,
+                date
+              )}
+            >
+              Электричка ({externalFinishStationName} -{" "}
+              {externalStartStationName})
+            </Link>
+          </li>
+          <li>
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href={getExternalUrl(
+                externalFinishStationId,
+                externalMiddleStationId,
+                date
+              )}
+            >
+              Электричка ({externalFinishStationName} -{" "}
+              {externalMiddleStationName})
+            </Link>
+          </li>
+        </ScheduleList>
+      </Collapsible>
+      <br />
     </div>
   );
 }

@@ -22,8 +22,14 @@ export const internalBackFinishStationId = "28169577R10"; // Видубичі
 
 export const internalMiddleToFinishTimeMin = 6;
 
+export const internalUrl =
+  "https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=433390657&range=A1:Z23";
+export const internalBackUrl =
+  "https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=28169577&range=A1:Z23";
+
 export const externalDomain = `https://swrailway.gov.ua/timetable/eltrain/`;
 export const externalInfoUrl = `${externalDomain}:href#tabs-notes`;
+export const externalScheduleUrl = `${externalDomain}?sid1=:fromId&sid2=:toId&eventdate=:date`;
 
 export const externalTablePattern = /(<table[^>+]id=geo2g.+?<\/table>)/ms;
 export const internalTablePattern =

@@ -1,3 +1,6 @@
+import { externalScheduleUrl } from "./constants";
+import { getExternalBackSchedule } from "./data";
+
 export const isInPast = (seconds: number) => {
   if (!seconds) {
     return false;
@@ -21,4 +24,11 @@ export const secondsToTime = (seconds: number) => {
   const minsStr = mins.toString().padStart(2, "0");
 
   return `${hoursStr}:${minsStr}`;
+};
+
+export const getExternalUrl = (fromId: string, toId: string, date: string) => {
+  return externalScheduleUrl
+    .replace(":fromId", fromId)
+    .replace(":toId", toId)
+    .replace(":date", date);
 };

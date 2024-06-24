@@ -80,6 +80,7 @@ const InfoLink = styled.a`
   color: red;
   text-decoration: none;
   font-weight: bold;
+  white-space: nowrap;
 `;
 
 type Props = {

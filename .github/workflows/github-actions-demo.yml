@@ -1,0 +1,10 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: 
+  schedule:
+    - cron: "* * * * *"
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: main
+    steps:
+      - run: npm run data-files

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x527" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x142" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -42,7 +42,7 @@
       K.ShowDelay = 150;
       K.HideDelay = 400;
       //Задание структуры меню
-      K.addItem("Про нас", "/head/", false);K.Items[0].addItem("Загальна інформація", "/head/general/", false);K.Items[0].addItem("Керівництво", "/head/managment/", false);K.Items[0].addItem("Дорпрофсож", "/head/dorpr/", false);K.addItem("НОВИНИ та ІНТЕРВ'Ю", "/newsline/", false);K.addItem("Перевезення вантажів", "/M/", false);K.Items[2].addItem("Правила перевезення вантажів", "/M/pravila/", false);K.Items[2].addItem("Роботи, послуги за вільними тарифами", "/M/victory_tar/", false);K.Items[2].addItem("Укладання договорів на залізниці", "/M/cod_doc/", false);K.Items[2].addItem("Перелік послуг, які надаються комерційним господарством", "/M/poslygi/", false);K.Items[2].addItem("Послуги Жмеринської механізованої дистанції навантажувально-розвантажувальних робіт", "/M/posl_jmer/", false);K.Items[2].addItem("Станції, відкриті для вантажних операцій на місцях загального користування", "/M/st/", false);K.Items[2].addItem("Перелік осіб, яким надається право дозволу на переадресування вантажів", "/M/perelik_osib/", false);K.Items[2].addItem("Структурний підрозділ служба статистики", "/M/statistics/", false);K.addItem("Послуги", "/poslugi/", false);K.Items[3].addItem("Оренда", "/poslugi/orenda/", false);K.Items[3].addItem("Послуга “Експрес-передача”", "/poslugi/expres/", false);K.Items[3].addItem("Послуги будівельно-монтажні", "/poslugi/bmes/", false);K.Items[3].addItem("Послуги по перевезенню багажу та вантажобагажу", "/poslugi/bagaj/", false);K.Items[3].addItem("Послуги по перевезенню автомобіля вагоном-автомобілевозом", "/poslugi/vag_avto/", false);K.Items[3].addItem("Послуги надання в оренду вагону-салону", "/poslugi/vagon_vip/", false);K.Items[3].addItem("Охорона вантажів, людей, об’єктів та обслуг. вогнегасників", "/poslugi/voen/", false);K.addItem("РОЗКЛАД РУХУ", "/timetable/", false);K.Items[4].addItem("РОЗКЛАД РУХУ Приміських поїздів", "/timetable/eltrain/", false);K.Items[4].addItem("Schedule of Suburb Trains", "/timetable/eltrain_en/", false);K.addItem("Schedule", "/schedule/", false);K.addItem("Працевлаштування", "/kvp-kyiv/", false);K.addItem("Кваліфікаційний центр", "/kvalc/", false);
+      K.addItem("Про нас", "/head/", false);K.Items[0].addItem("Загальна інформація", "/head/general/", false);K.Items[0].addItem("Керівництво", "/head/managment/", false);K.Items[0].addItem("Дорпрофсож", "/head/dorpr/", false);K.addItem("НОВИНИ та ІНТЕРВ'Ю", "/newsline/", false);K.addItem("Перевезення вантажів", "/M/", false);K.Items[2].addItem("Правила перевезення вантажів", "/M/pravila/", false);K.Items[2].addItem("Роботи, послуги за вільними тарифами", "/M/victory_tar/", false);K.Items[2].addItem("Укладання договорів на залізниці", "/M/cod_doc/", false);K.Items[2].addItem("Перелік послуг, які надаються комерційним господарством", "/M/poslygi/", false);K.Items[2].addItem("Послуги Жмеринської механізованої дистанції навантажувально-розвантажувальних робіт", "/M/posl_jmer/", false);K.Items[2].addItem("Станції, відкриті для вантажних операцій на місцях загального користування", "/M/st/", false);K.Items[2].addItem("Перелік осіб, яким надається право дозволу на переадресування вантажів", "/M/perelik_osib/", false);K.Items[2].addItem("Структурний підрозділ служба статистики", "/M/statistics/", false);K.addItem("Послуги", "/poslugi/", false);K.Items[3].addItem("Оренда", "/poslugi/orenda/", false);K.Items[3].addItem("Охорона вантажів, людей, об’єктів та обслуг. вогнегасників", "/poslugi/voen/", false);K.addItem("РОЗКЛАД РУХУ", "/timetable/", false);K.Items[4].addItem("РОЗКЛАД РУХУ Приміських поїздів", "/timetable/eltrain/", false);K.addItem("Працевлаштування", "/kvp-kyiv/", false);K.addItem("Кваліфікаційний центр", "/kvalc/", false);
       //Вставка объекта в указанный тег HTML
       K.insertElementIn("menujs", "top", true);
   //-->
@@ -72,7 +72,7 @@ input.train { font-size:16px; width:190px;}
 </font></td>
  <td width=100%><div align=center> </div></td>
 <td nowrap><div align=right>
-<a href=".?sid1=88&sid2=83&eventdate=2024-09-03"><img src=/img/lng/ukr_off.gif></a><!--<a href=".?sid1=88&sid2=83&eventdate=2024-09-03&lng=_ru"><img src=/img/lng/rus_off.gif></a>--><a href=".?sid1=88&sid2=83&eventdate=2024-09-03&lng=_en"><img src=/img/lng/eng_off.gif></a>
+<a href=".?sid1=88&sid2=83&eventdate=2024-09-15"><img src=/img/lng/ukr_off.gif></a><!--<a href=".?sid1=88&sid2=83&eventdate=2024-09-15&lng=_ru"><img src=/img/lng/rus_off.gif></a>--><a href=".?sid1=88&sid2=83&eventdate=2024-09-15&lng=_en"><img src=/img/lng/eng_off.gif></a>
 </div></td></tr>
 <TR ><TD colspan=3 >
 <center>
@@ -95,13 +95,14 @@ input.train { font-size:16px; width:190px;}
 <font color=red>До уваги!</font> <a href="?rid=471" style='font-size:12px;color:maroon;font-weight:bold'><img src="/img/arrows2.gif"> Розклад руху <b>міської</b> електрички залізничним кільцем (Київ)</a>
 
 
--->
 </p> 
 <p>
+
 <font color=red>До уваги!</font> <a href="?rid=239"><img src="/img/arrows2.gif"> Розклад руху <b>Kyiv Boryspil Express</b> </a>
 
 
 </p>
+-->
 
 <!--<font color=red>До уваги!</font> <a href="?gid=1&rid=470&nofar=1" style='font-size:14px;color:maroon;font-weight:bold'><img src="/img/arrows2.gif"> З метою перевезення пасажирів по м. Київ з 21.03.2022р. <br>і до відміни призначається курсування наступних приміських поїздів (РОЗКЛАД тут)</a>
 
@@ -162,7 +163,7 @@ input.train { font-size:16px; width:190px;}
       Всі дні
       <input name="dateR" type="radio" value="1">
       На дату
-      <input name="eventdate" type="text" value="2024-09-03" class='inpDate eventdate' readonly >
+      <input name="eventdate" type="text" value="2024-09-15" class='inpDate eventdate' readonly >
   </td></tr>
   </table>
 <!--/ Включає інформацію про відстань і вартість проїзду
@@ -261,25 +262,6 @@ td.tm {padding: 0 5 0 5;}
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
 <tr class="onx" style="CURSOR:pointer;" height=20>
-    <td><a class=et title='' href=".?tid=22938">&nbsp;<b>6672</b></a>
-    
-    
-    </td>
-	<td>крім сб., нд.&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2023-12-10 по 2024-12-14"></td>
-	<td>Клавдієво – Київ-Пас. (Приміський)&nbsp;</td>
-	<td>07:21</td>
-  <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm>07:22</td>
-  <td class=tm>07:46</td>
-  <td class=tm><a class=et href="?sid=83"><b>Борщагівка</b></a></td>
-  <td>07:47</td>
-  <td class=tm>0:24</td>
-  <td class=qkms>14.1</td>
-    <td>2023-12-10&nbsp;</td><td>2024-12-14&nbsp;</td>
-</tr>
-<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
-
-<tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23881">&nbsp;<b>6606</b></a>
     
     
@@ -298,7 +280,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="onx" style="CURSOR:pointer;" height=20>
+<tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23213">&nbsp;<b>6608</b></a>
     
     
@@ -317,7 +299,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20>
+<tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=22940">&nbsp;<b>6676</b></a>
     
     
@@ -336,7 +318,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="onx" style="CURSOR:pointer;" height=20>
+<tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23882">&nbsp;<b>6610</b></a>
     
     
@@ -355,7 +337,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20>
+<tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=24171">&nbsp;<b>6612</b></a>
     
     
@@ -374,7 +356,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="onx" style="CURSOR:pointer;" height=20>
+<tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23884">&nbsp;<b>6616</b></a>
     
     
@@ -393,7 +375,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20>
+<tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=24156">&nbsp;<b>6622</b></a>
     
     
@@ -412,10 +394,10 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="onx" style="CURSOR:pointer;" height=20>
+<tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23885">&nbsp;<b>6624</b></a>
     
-    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
+    
     </td>
 	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-07-22 по 2024-12-14"></td>
 	<td>Тетерів – Борщагівка&nbsp;</td>
@@ -431,7 +413,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20>
+<tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23888">&nbsp;<b>6626</b></a>
     
     
@@ -511,33 +493,6 @@ td.tm {padding: 0 5 0 5;}
 
 <tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=88,85,83&count=2&" 
  urlname = "Ірпінь - Святошин - Борщагівка">
-	<td width=135>Немішаєве – Святошин</td>
-  <td class=tm style='background-color:#BFFFBF'>
-    <a class=et title='' href=".?tid=22270">&nbsp;<b>6670</b></a>
-    
-    <br>крім сб., нд.
-  </td>
-	<td >05:27</td>
-  <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm>05:28</td>
-  <td class=tm style='background-color:#BFFFBF;'>05:42</td>
-  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:30</td>
-  <td class=tm >06:35</td>
-  <td><a class=et href="?sid=83">Борщагівка</a></td>
-  <td class=tm >06:36</td>
-  <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23778"><b>7406/7407</b></a>
-    
-    <br>щоденно
-  </td>
-  <td width=135>Святошин – Святошин</td>
-	<td>1:07<div class=qkms2>14.1</div></td>
-</tr>
-<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
-
-<tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=88,85,83&count=2&" 
- urlname = "Ірпінь - Святошин - Борщагівка">
 	<td width=135>Тетерів – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23879">&nbsp;<b>6602</b></a>
@@ -563,33 +518,6 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=88,85,83&count=2&" 
- urlname = "Ірпінь - Святошин - Борщагівка">
-	<td width=135>Буча – Святошин</td>
-  <td class=tm style='background-color:#BFFFBF'>
-    <a class=et title='' href=".?tid=20738">&nbsp;<b>6680</b></a>
-    
-    <br>крім сб., нд.
-  </td>
-	<td >08:42</td>
-  <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm>08:43</td>
-  <td class=tm style='background-color:#BFFFBF;'>08:58</td>
-  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>09:00</td>
-  <td class=tm >09:05</td>
-  <td><a class=et href="?sid=83">Борщагівка</a></td>
-  <td class=tm >09:06</td>
-  <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23762"><b>7416/7317</b></a>
-    
-    <br>крім сб., нд.
-  </td>
-  <td width=135>Святошин – Святошин</td>
-	<td>0:22<div class=qkms2>14.1</div></td>
-</tr>
-<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
-
 <tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=88,85,83&count=2&" 
  urlname = "Ірпінь - Святошин - Борщагівка">
 	<td width=135>Коростень – Святошин</td>
@@ -603,17 +531,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>17:25</td>
   <td class=tm style='background-color:#BFFFBF;'>17:40</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>18:00</td>
-  <td class=tm >18:05</td>
+  <td class=tm style='background-color:#FFE2D5'>05:39</td>
+  <td class=tm >07:22</td>
   <td><a class=et href="?sid=83">Борщагівка</a></td>
-  <td class=tm >18:06</td>
+  <td class=tm >07:23</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23792"><b>7440/7341</b></a>
+    <a class=et title='' href=".?tid=23751"><b>7302/7303</b></a>
     
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
   <td width=135>Святошин – Святошин</td>
-	<td>0:40<div class=qkms2>14.1</div></td>
+	<td>13:57<div class=qkms2>59.4</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -720,7 +648,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2024-08-30', maxDate: '2024-10-30', dateFormat: 'yy-mm-dd' });
+                    minDate: '2024-09-05', maxDate: '2024-11-05', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -785,5 +713,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.047278881072998 секунд
+<!--сгенерено за 0.041281938552856 секунд
 -->

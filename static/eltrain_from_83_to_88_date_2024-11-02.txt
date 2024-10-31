@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x496" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x42" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -243,11 +243,11 @@ td.tm {padding: 0 5 0 5;}
 
 
 <tr class="on" style="CURSOR:pointer;" height=20>
-    <td><a class=et title='' href=".?tid=24602">&nbsp;<b>6601</b></a>
-    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2024-10-24 по 2025-03-29">
+    <td><a class=et title='' href=".?tid=23874">&nbsp;<b>6601</b></a>
+    
     
     </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-10-24 по 2025-03-29"></td>
+	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2024-10-25 по 2024-12-14"></td>
 	<td>Київ-Пас. (Приміський) – Коростень&nbsp;</td>
 	<td>05:55</td>
   <td class=tm><a class=et href="?sid=83"><b>Борщагівка</b></a></td>
@@ -257,7 +257,7 @@ td.tm {padding: 0 5 0 5;}
   <td>06:19</td>
   <td class=tm>0:22</td>
   <td class=qkms>14.1</td>
-    <td>2024-10-24&nbsp;</td><td>2025-03-29&nbsp;</td>
+    <td>2024-10-25&nbsp;</td><td>2024-12-14&nbsp;</td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -517,7 +517,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -544,7 +544,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -571,7 +571,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -598,7 +598,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -625,7 +625,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -652,7 +652,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -679,7 +679,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -706,7 +706,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -733,7 +733,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -760,7 +760,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -787,7 +787,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -814,7 +814,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -841,7 +841,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -868,7 +868,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -895,7 +895,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -922,7 +922,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -949,7 +949,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -976,7 +976,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1003,7 +1003,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1030,7 +1030,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1057,7 +1057,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1084,7 +1084,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1111,7 +1111,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1138,7 +1138,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1165,7 +1165,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1192,7 +1192,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1219,7 +1219,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1246,7 +1246,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1273,7 +1273,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1300,7 +1300,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1327,7 +1327,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1354,7 +1354,7 @@ td.tm {padding: 0 5 0 5;}
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
   <td class=tm >06:19</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=24602"><b>6601</b></a>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
     
     <br>щоденно
   </td>
@@ -1466,7 +1466,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2024-10-23', maxDate: '2024-12-23', dateFormat: 'yy-mm-dd' });
+                    minDate: '2024-10-31', maxDate: '2024-12-31', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -1531,5 +1531,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.062118053436279 секунд
+<!--сгенерено за 0.072158098220825 секунд
 -->

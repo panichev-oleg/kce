@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x46" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x967" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -72,7 +72,7 @@ input.train { font-size:16px; width:190px;}
 </font></td>
  <td width=100%><div align=center> </div></td>
 <td nowrap><div align=right>
-<a href=".?sid1=83&sid2=88&eventdate=2024-11-09"><img src=/img/lng/ukr_off.gif></a><!--<a href=".?sid1=83&sid2=88&eventdate=2024-11-09&lng=_ru"><img src=/img/lng/rus_off.gif></a>--><a href=".?sid1=83&sid2=88&eventdate=2024-11-09&lng=_en"><img src=/img/lng/eng_off.gif></a>
+<a href=".?sid1=83&sid2=88&eventdate=2024-11-21"><img src=/img/lng/ukr_off.gif></a><!--<a href=".?sid1=83&sid2=88&eventdate=2024-11-21&lng=_ru"><img src=/img/lng/rus_off.gif></a>--><a href=".?sid1=83&sid2=88&eventdate=2024-11-21&lng=_en"><img src=/img/lng/eng_off.gif></a>
 </div></td></tr>
 <TR ><TD colspan=3 >
 <center>
@@ -163,7 +163,7 @@ input.train { font-size:16px; width:190px;}
       Всі дні
       <input name="dateR" type="radio" value="1">
       На дату
-      <input name="eventdate" type="text" value="2024-11-09" class='inpDate eventdate' readonly >
+      <input name="eventdate" type="text" value="2024-11-21" class='inpDate eventdate' readonly >
   </td></tr>
   </table>
 <!--/ Включає інформацію про відстань і вартість проїзду
@@ -357,6 +357,25 @@ td.tm {padding: 0 5 0 5;}
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
 <tr class="on" style="CURSOR:pointer;" height=20>
+    <td><a class=et title='' href=".?tid=21226">&nbsp;<b>6673</b></a>
+    
+    
+    </td>
+	<td>крім сб., нд.&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2023-12-10 по 2024-12-14"></td>
+	<td>Борщагівка – Немішаєве&nbsp;</td>
+	<td>–</td>
+  <td class=tm><a class=et href="?sid=83"><b>Борщагівка</b></a></td>
+  <td class=tm>17:15</td>
+  <td class=tm>17:37</td>
+  <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
+  <td>17:38</td>
+  <td class=tm>0:22</td>
+  <td class=qkms>14.1</td>
+    <td>2023-12-10&nbsp;</td><td>2024-12-14&nbsp;</td>
+</tr>
+<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
+
+<tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=24046">&nbsp;<b>6617</b></a>
     
     
@@ -375,7 +394,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="onx" style="CURSOR:pointer;" height=20>
+<tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23878">&nbsp;<b>6619</b></a>
     
     
@@ -394,7 +413,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20>
+<tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=22936">&nbsp;<b>6623</b></a>
     
     
@@ -512,17 +531,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>05:36</td>
   <td class=tm style='background-color:#BFFFBF;'>07:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>08:01</td>
+  <td class=tm >08:16</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >08:17</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=20737"><b>6679</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>24:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Буча</td>
+	<td>2:40<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -539,21 +558,48 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>07:23</td>
   <td class=tm style='background-color:#BFFFBF;'>07:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>08:01</td>
+  <td class=tm >08:16</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >08:17</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=20737"><b>6679</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>22:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Буча</td>
+	<td>0:53<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
 <tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+ urlname = "Борщагівка - Святошин - Ірпінь">
+	<td width=135>Дарниця – Святошин</td>
+  <td class=tm style='background-color:#BFFFBF'>
+    <a class=et title='' href=".?tid=18146">&nbsp;<b>7305</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+	<td >07:52</td>
+  <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
+  <td class=tm>07:53</td>
+  <td class=tm style='background-color:#BFFFBF;'>07:59</td>
+  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
+  <td class=tm style='background-color:#FFE2D5'>08:01</td>
+  <td class=tm >08:16</td>
+  <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
+  <td class=tm >08:17</td>
+  <td class='tm' style='background-color:#FFE2D5'>
+    <a class=et title='' href=".?tid=20737"><b>6679</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+  <td width=135>Святошин – Буча</td>
+	<td>0:23<div class=qkms2>14.1</div></td>
+</tr>
+<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
+
+<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -566,21 +612,21 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>06:36</td>
   <td class=tm style='background-color:#BFFFBF;'>08:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>23:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>12:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+<tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -593,17 +639,44 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>08:23</td>
   <td class=tm style='background-color:#BFFFBF;'>08:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>21:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>11:05<div class=qkms2>12</div></td>
+</tr>
+<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
+
+<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+ urlname = "Борщагівка - Святошин - Ірпінь">
+	<td width=135>Святошин – Святошин</td>
+  <td class=tm style='background-color:#BFFFBF'>
+    <a class=et title='' href=".?tid=23758">&nbsp;<b>7408/7309</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+	<td >07:05</td>
+  <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
+  <td class=tm>07:06</td>
+  <td class=tm style='background-color:#BFFFBF;'>08:59</td>
+  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
+  <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
+  <td class=tm >19:29</td>
+  <td class='tm' style='background-color:#FFE2D5'>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>12:22<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -620,17 +693,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>07:36</td>
   <td class=tm style='background-color:#BFFFBF;'>09:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>22:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>11:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -647,21 +720,48 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>09:23</td>
   <td class=tm style='background-color:#BFFFBF;'>09:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>20:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>10:05<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
 <tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+ urlname = "Борщагівка - Святошин - Ірпінь">
+	<td width=135>Святошин – Святошин</td>
+  <td class=tm style='background-color:#BFFFBF'>
+    <a class=et title='' href=".?tid=23759">&nbsp;<b>7412/7313</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+	<td >08:05</td>
+  <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
+  <td class=tm>08:06</td>
+  <td class=tm style='background-color:#BFFFBF;'>09:59</td>
+  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
+  <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
+  <td class=tm >19:29</td>
+  <td class='tm' style='background-color:#FFE2D5'>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>11:22<div class=qkms2>12</div></td>
+</tr>
+<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
+
+<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -674,21 +774,21 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>08:36</td>
   <td class=tm style='background-color:#BFFFBF;'>10:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>21:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>10:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+<tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -701,17 +801,44 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>10:23</td>
   <td class=tm style='background-color:#BFFFBF;'>10:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>19:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>9:05<div class=qkms2>12</div></td>
+</tr>
+<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
+
+<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+ urlname = "Борщагівка - Святошин - Ірпінь">
+	<td width=135>Святошин – Святошин</td>
+  <td class=tm style='background-color:#BFFFBF'>
+    <a class=et title='' href=".?tid=23762">&nbsp;<b>7416/7317</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+	<td >09:05</td>
+  <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
+  <td class=tm>09:06</td>
+  <td class=tm style='background-color:#BFFFBF;'>10:59</td>
+  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
+  <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
+  <td class=tm >19:29</td>
+  <td class='tm' style='background-color:#FFE2D5'>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>10:22<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -728,17 +855,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>09:36</td>
   <td class=tm style='background-color:#BFFFBF;'>11:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>20:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>9:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -755,17 +882,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>11:23</td>
   <td class=tm style='background-color:#BFFFBF;'>11:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>18:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>8:05<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -782,17 +909,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>10:36</td>
   <td class=tm style='background-color:#BFFFBF;'>12:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>19:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>8:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -809,17 +936,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>12:23</td>
   <td class=tm style='background-color:#BFFFBF;'>12:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>17:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>7:05<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -836,17 +963,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>11:36</td>
   <td class=tm style='background-color:#BFFFBF;'>13:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>18:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>7:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -863,17 +990,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>13:23</td>
   <td class=tm style='background-color:#BFFFBF;'>13:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>16:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>6:05<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -890,17 +1017,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>12:36</td>
   <td class=tm style='background-color:#BFFFBF;'>14:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>17:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>6:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -917,17 +1044,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>14:23</td>
   <td class=tm style='background-color:#BFFFBF;'>14:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>15:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>5:05<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -944,17 +1071,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>13:36</td>
   <td class=tm style='background-color:#BFFFBF;'>15:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>16:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>5:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -971,17 +1098,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>15:23</td>
   <td class=tm style='background-color:#BFFFBF;'>15:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>14:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>4:05<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -998,17 +1125,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>14:36</td>
   <td class=tm style='background-color:#BFFFBF;'>16:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>15:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>4:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -1025,17 +1152,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>16:23</td>
   <td class=tm style='background-color:#BFFFBF;'>16:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>13:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>3:05<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -1052,17 +1179,17 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>15:36</td>
   <td class=tm style='background-color:#BFFFBF;'>17:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>14:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>3:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -1079,21 +1206,48 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>17:23</td>
   <td class=tm style='background-color:#BFFFBF;'>17:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>12:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>2:05<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
 <tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+ urlname = "Борщагівка - Святошин - Ірпінь">
+	<td width=135>Святошин – Святошин</td>
+  <td class=tm style='background-color:#BFFFBF'>
+    <a class=et title='' href=".?tid=23786">&nbsp;<b>7432/7333</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+	<td >16:05</td>
+  <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
+  <td class=tm>16:06</td>
+  <td class=tm style='background-color:#BFFFBF;'>17:59</td>
+  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
+  <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
+  <td class=tm >19:29</td>
+  <td class='tm' style='background-color:#FFE2D5'>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>3:22<div class=qkms2>12</div></td>
+</tr>
+<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
+
+<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -1106,21 +1260,21 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>16:36</td>
   <td class=tm style='background-color:#BFFFBF;'>18:20</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>13:42<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>2:52<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+<tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -1133,17 +1287,44 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm>18:23</td>
   <td class=tm style='background-color:#BFFFBF;'>18:29</td>
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td class=tm style='background-color:#FFE2D5'>06:03</td>
-  <td class=tm >06:18</td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
   <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm >06:19</td>
+  <td class=tm >19:29</td>
   <td class='tm' style='background-color:#FFE2D5'>
-    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
     
-    <br>щоденно
+    <br>крім сб., нд.
   </td>
-  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
-	<td>11:55<div class=qkms2>12</div></td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>1:05<div class=qkms2>12</div></td>
+</tr>
+<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
+
+<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+ urlname = "Борщагівка - Святошин - Ірпінь">
+	<td width=135>Святошин – Святошин</td>
+  <td class=tm style='background-color:#BFFFBF'>
+    <a class=et title='' href=".?tid=23789">&nbsp;<b>7436/7337</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+	<td >17:05</td>
+  <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
+  <td class=tm>17:06</td>
+  <td class=tm style='background-color:#BFFFBF;'>18:59</td>
+  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
+  <td class=tm style='background-color:#FFE2D5'>19:12</td>
+  <td class=tm >19:28</td>
+  <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
+  <td class=tm >19:29</td>
+  <td class='tm' style='background-color:#FFE2D5'>
+    <a class=et title='' href=".?tid=24153"><b>6621</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+  <td width=135>Святошин – Тетерів</td>
+	<td>2:22<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -1205,6 +1386,33 @@ td.tm {padding: 0 5 0 5;}
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
+    <a class=et title='' href=".?tid=23792">&nbsp;<b>7440/7341</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+	<td >18:05</td>
+  <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
+  <td class=tm>18:06</td>
+  <td class=tm style='background-color:#BFFFBF;'>19:59</td>
+  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
+  <td class=tm style='background-color:#FFE2D5'>06:03</td>
+  <td class=tm >06:18</td>
+  <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
+  <td class=tm >06:19</td>
+  <td class='tm' style='background-color:#FFE2D5'>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    
+    <br>щоденно
+  </td>
+  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
+	<td>12:12<div class=qkms2>12</div></td>
+</tr>
+<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
+
+<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+ urlname = "Борщагівка - Святошин - Ірпінь">
+	<td width=135>Святошин – Святошин</td>
+  <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18050">&nbsp;<b>7442/7443</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
@@ -1228,7 +1436,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+<tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -1255,7 +1463,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -1282,7 +1490,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+<tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -1309,7 +1517,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -1336,7 +1544,7 @@ td.tm {padding: 0 5 0 5;}
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
-<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+<tr class="onx" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
  urlname = "Борщагівка - Святошин - Ірпінь">
 	<td width=135>Святошин – Святошин</td>
   <td class=tm style='background-color:#BFFFBF'>
@@ -1360,6 +1568,33 @@ td.tm {padding: 0 5 0 5;}
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
 	<td>7:55<div class=qkms2>12</div></td>
+</tr>
+<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
+
+<tr class="on" style="CURSOR:pointer;" height=20 url="?AJ=transfer&sids=83,85,88&count=2&" 
+ urlname = "Борщагівка - Святошин - Ірпінь">
+	<td width=135>Святошин – Святошин</td>
+  <td class=tm style='background-color:#BFFFBF'>
+    <a class=et title='' href=".?tid=23800">&nbsp;<b>7448/7349</b></a>
+    
+    <br>крім сб., нд.
+  </td>
+	<td >21:35</td>
+  <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
+  <td class=tm>21:36</td>
+  <td class=tm style='background-color:#BFFFBF;'>23:29</td>
+  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
+  <td class=tm style='background-color:#FFE2D5'>06:03</td>
+  <td class=tm >06:18</td>
+  <td><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
+  <td class=tm >06:19</td>
+  <td class='tm' style='background-color:#FFE2D5'>
+    <a class=et title='' href=".?tid=23874"><b>6601</b></a>
+    
+    <br>щоденно
+  </td>
+  <td width=135>Київ-Пас. (Приміський) – Коростень</td>
+	<td>8:42<div class=qkms2>12</div></td>
 </tr>
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
@@ -1466,7 +1701,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2024-11-08', maxDate: '2025-01-08', dateFormat: 'yy-mm-dd' });
+                    minDate: '2024-11-11', maxDate: '2025-01-11', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -1531,5 +1766,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.074126005172729 секунд
+<!--сгенерено за 0.079638957977295 секунд
 -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x802" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x790" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -92,7 +92,7 @@ input.train { font-size:16px; width:190px;}
 
 
 <p>
-<font color=red>До уваги!</font>  Розклад руху <a href="?rid=471" style='font-size:12px;color:maroon;font-weight:bold'><img src="/img/arrows2.gif"><b>Міська електричка Kyiv City Express</b></a>
+<font color=red>До уваги!</font>  Розклад руху <a href="?rid=480" style='font-size:12px;color:maroon;font-weight:bold'><img src="/img/arrows2.gif"><b>Міська електричка Kyiv City Express</b></a>
 
 
 </p> 
@@ -525,7 +525,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23803">&nbsp;<b>7402/7403</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >05:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -552,7 +552,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23751">&nbsp;<b>7302/7303</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >07:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -606,7 +606,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23778">&nbsp;<b>7406/7407</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >06:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -633,7 +633,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23753">&nbsp;<b>7306/7307</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >08:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -687,7 +687,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23804">&nbsp;<b>7410/7411</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >07:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -714,7 +714,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23756">&nbsp;<b>7310/7311</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >09:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -768,7 +768,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23810">&nbsp;<b>7414/7415</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >08:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -795,7 +795,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23760">&nbsp;<b>7314/7315</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >10:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -849,7 +849,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23812">&nbsp;<b>7418/7419</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >09:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -876,7 +876,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23763">&nbsp;<b>7318/7319</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >11:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -903,7 +903,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18035">&nbsp;<b>7420/7421</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >10:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -930,7 +930,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23765">&nbsp;<b>7320/7321</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >12:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -957,7 +957,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18036">&nbsp;<b>7422/7423</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >11:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -984,7 +984,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18039">&nbsp;<b>7322/7323</b></a>
     
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >13:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1011,7 +1011,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18038">&nbsp;<b>7424/7425</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >12:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1038,7 +1038,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23771">&nbsp;<b>7324/7325</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >14:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1065,7 +1065,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18040">&nbsp;<b>7426/7427</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >13:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1092,7 +1092,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23775">&nbsp;<b>7326/7327</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >15:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1146,7 +1146,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23782">&nbsp;<b>7328/7329</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >16:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1173,7 +1173,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18043">&nbsp;<b>7430/7431</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >15:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1200,7 +1200,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23784">&nbsp;<b>7330/7331</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >17:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1254,7 +1254,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18046">&nbsp;<b>7434/7435</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >16:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1281,7 +1281,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23787">&nbsp;<b>7334/7335</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >18:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1335,7 +1335,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18048">&nbsp;<b>7438/7439</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >17:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1362,7 +1362,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23790">&nbsp;<b>7338/7339</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >19:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1416,7 +1416,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18050">&nbsp;<b>7442/7443</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >18:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1443,7 +1443,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23793">&nbsp;<b>7342/7343</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >20:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1470,7 +1470,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18052">&nbsp;<b>7444/7445</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >19:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1524,7 +1524,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=18169">&nbsp;<b>7446/7447</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >20:35</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1551,7 +1551,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm style='background-color:#BFFFBF'>
     <a class=et title='' href=".?tid=23797">&nbsp;<b>7346/7347</b></a>
     <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
-    <br>крім сб., нд.
+    <br>щоденно
   </td>
 	<td >22:22</td>
   <td class=tm><a class=et href="?sid=83">Борщагівка</a></td>
@@ -1702,7 +1702,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2024-11-20', maxDate: '2025-01-20', dateFormat: 'yy-mm-dd' });
+                    minDate: '2024-11-27', maxDate: '2025-01-27', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -1767,5 +1767,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.06903600692749 секунд
+<!--сгенерено за 0.066783905029297 секунд
 -->

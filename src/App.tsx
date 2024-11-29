@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { ScheduleTable, ScheduleTableBack } from "./components/ScheduleTable";
-import { MergedSchedule } from "./types";
+import { AppStatus, MergedSchedule } from "./types";
 import {
   getExternalBackSchedule,
   getExternalSchedule,
@@ -27,33 +27,62 @@ import {
   internalUrl,
 } from "./helpers/constants";
 import { getExternalUrl } from "./helpers/utils";
-import { Link, ScheduleList } from "./components/shared";
+import { UnstyledLink, Link, ScheduleList } from "./components/shared";
+import { ArrowLeft, ArrowRight } from "./components/Arrow";
 
 function App() {
   const [data, setData] = React.useState<MergedSchedule>();
   const [dataBack, setDataBack] = React.useState<MergedSchedule>();
   const [isCompactView, setIsCompactView] = React.useState(true);
+  const [date, setDate] = React.useState(new Date());
+  const [status, setStatus] = React.useState<AppStatus>("loading");
 
-  const date = new Date().toISOString().split("T")[0];
+  const gotoNextDay = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setDate((date) => new Date(date.getTime() + 24 * 60 * 60 * 1000));
+  };
+
+  const gotoPrevDay = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setDate((date) => new Date(date.getTime() - 24 * 60 * 60 * 1000));
+  };
+
+  const gotoToday = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setDate(new Date());
+  };
+
+  const viewDate = date.toISOString().split("T")[0];
 
   React.useEffect(() => {
+    setStatus("loading");
     (async () => {
-      const externalSchedule = await getExternalSchedule(date);
-      const externalScheduleBack = await getExternalBackSchedule(date);
+      try {
+        const externalSchedule = await getExternalSchedule(viewDate);
+        const externalScheduleBack = await getExternalBackSchedule(viewDate);
 
-      const internalSchedule = await getInternalSchedule(date, false);
-      const internalScheduleBack = await getInternalSchedule(date, true);
+        const internalSchedule = await getInternalSchedule(viewDate, false);
+        const internalScheduleBack = await getInternalSchedule(viewDate, true);
 
-      const mergedSchedule = mergeSchedule(internalSchedule, externalSchedule);
-      setData(mergedSchedule);
+        const mergedSchedule = mergeSchedule(
+          internalSchedule,
+          externalSchedule
+        );
+        setData(mergedSchedule);
 
-      const mergedScheduleBack = mergeScheduleBack(
-        internalScheduleBack,
-        externalScheduleBack
-      );
-      setDataBack(mergedScheduleBack);
+        const mergedScheduleBack = mergeScheduleBack(
+          internalScheduleBack,
+          externalScheduleBack
+        );
+        setDataBack(mergedScheduleBack);
+        setStatus("loaded");
+      } catch (e) {
+        setStatus("error");
+        setData(undefined);
+        setDataBack(undefined);
+      }
     })();
-  }, [date]);
+  }, [viewDate]);
 
   const ScheduleTableComponent = isCompactView
     ? ScheduleTableCompact
@@ -65,7 +94,20 @@ function App() {
   return (
     <div className="App">
       <h2>KCE</h2>
-      <u>Дата: {date}</u>
+      <UnstyledLink href="#" onClick={gotoPrevDay}>
+        <ArrowLeft />
+      </UnstyledLink>
+
+      <u>
+        <UnstyledLink href="#" onClick={gotoToday}>
+          Дата: {viewDate}
+        </UnstyledLink>
+      </u>
+
+      <UnstyledLink href="#" onClick={gotoNextDay}>
+        <ArrowRight />
+      </UnstyledLink>
+
       <br />
       <br />
       <label>
@@ -81,7 +123,16 @@ function App() {
       <u>Из Киева:</u>
       <br />
       <br />
-      <ScheduleTableComponent data={data} />
+
+      {status === "error" ? (
+        <>
+          {"Не удалось получить данные"}
+          <br />
+        </>
+      ) : (
+        <ScheduleTableComponent data={data} />
+      )}
+
       <br />
       <Collapsible title="Посмотреть полное расписание">
         <ScheduleList>
@@ -98,7 +149,7 @@ function App() {
               href={getExternalUrl(
                 externalStartStationId,
                 externalFinishStationId,
-                date
+                viewDate
               )}
             >
               Электричка ({externalStartStationName} -{" "}
@@ -112,7 +163,7 @@ function App() {
               href={getExternalUrl(
                 externalMiddleStationId,
                 externalFinishStationId,
-                date
+                viewDate
               )}
             >
               Электричка ({externalMiddleStationName} -{" "}
@@ -127,7 +178,16 @@ function App() {
       <u>В Киев:</u>
       <br />
       <br />
-      <ScheduleTableBackComponent data={dataBack} />
+
+      {status === "error" ? (
+        <>
+          {"Не удалось получить данные"}
+          <br />
+        </>
+      ) : (
+        <ScheduleTableBackComponent data={dataBack} />
+      )}
+
       <br />
       <Collapsible title="Посмотреть полное расписание">
         <ScheduleList>
@@ -144,7 +204,7 @@ function App() {
               href={getExternalUrl(
                 externalFinishStationId,
                 externalStartStationId,
-                date
+                viewDate
               )}
             >
               Электричка ({externalFinishStationName} -{" "}
@@ -158,7 +218,7 @@ function App() {
               href={getExternalUrl(
                 externalFinishStationId,
                 externalMiddleStationId,
-                date
+                viewDate
               )}
             >
               Электричка ({externalFinishStationName} -{" "}

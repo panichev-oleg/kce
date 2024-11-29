@@ -23,3 +23,8 @@ export const Link = styled.a`
     text-decoration: none;
   }
 `;
+
+export const UnstyledLink = styled.a`
+  color: inherit;
+  text-decoration: none;
+`;

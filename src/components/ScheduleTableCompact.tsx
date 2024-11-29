@@ -92,7 +92,7 @@ export const ScheduleTableCompact: React.FC<Props> = ({ data }) => {
     data?.find(({ internalScheduleRow }) => internalScheduleRow) || {};
 
   if (!data) {
-    return <>no data</>;
+    return <>Загрузка расписания...</>;
   }
 
   const externalStopNames = getExternalStopNames([data[0].externalScheduleRow]);
@@ -184,7 +184,7 @@ export const ScheduleTableBackCompact: React.FC<Props> = ({ data }) => {
     data?.find(({ internalScheduleRow }) => internalScheduleRow) || {};
 
   if (!data) {
-    return <>no data</>;
+    return <>Загрузка расписания...</>;
   }
 
   const externalStopNames = getExternalStopNames(

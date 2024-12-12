@@ -130,7 +130,7 @@ function App() {
           <br />
         </>
       ) : (
-        <ScheduleTableComponent data={data} />
+        <ScheduleTableComponent data={data} date={date} />
       )}
 
       <br />
@@ -185,7 +185,7 @@ function App() {
           <br />
         </>
       ) : (
-        <ScheduleTableBackComponent data={dataBack} />
+        <ScheduleTableBackComponent data={dataBack} date={date} />
       )}
 
       <br />

@@ -15,10 +15,10 @@ const TransferInfoContainer = styled.span`
   align-items: center;
 `;
 
-const TransferInfo = styled.span<{ isHighligted?: boolean }>`
+const TransferInfo = styled.span<{ isHighlighted?: boolean }>`
   font-size: 0.7rem;
   white-space: nowrap;
-  ${({ isHighligted }) => `${isHighligted && "color: red;"}`};
+  ${({ isHighlighted }) => `${isHighlighted && "color: red;"}`};
 `;
 
 const renderTimeCell = (timeSec?: number) => {
@@ -48,7 +48,7 @@ const renderTransferInfo = (
     return (
       <TransferInfoContainer>
         ⟶
-        <TransferInfo isHighligted={isHighlighted}>
+        <TransferInfo isHighlighted={isHighlighted}>
           {transferTimeSec / 60} мин
         </TransferInfo>
       </TransferInfoContainer>
@@ -85,9 +85,10 @@ const InfoLink = styled.a`
 
 type Props = {
   data?: MergedSchedule;
+  date: Date;
 };
 
-export const ScheduleTableCompact: React.FC<Props> = ({ data }) => {
+export const ScheduleTableCompact: React.FC<Props> = ({ data, date }) => {
   const { internalScheduleRow } =
     data?.find(({ internalScheduleRow }) => internalScheduleRow) || {};
 
@@ -117,14 +118,18 @@ export const ScheduleTableCompact: React.FC<Props> = ({ data }) => {
               externalScheduleRow: external,
               internalScheduleRow: internal,
             } = item;
+
+            date.setHours(0, 0, 0, 0);
+
+            const startTimeSec =
+              internal?.startTimeSec ||
+              external.startTimeSec ||
+              external.middleTimeSec;
+
+            const startFullDateSec = date.getTime() + startTimeSec * 1000;
+
             return (
-              <StyledTr
-                isInPast={
-                  external.startTimeSec
-                    ? isInPast(external.startTimeSec)
-                    : isInPast(external.middleTimeSec)
-                }
-              >
+              <StyledTr isInPast={isInPast(startFullDateSec)}>
                 <StyledTd>
                   {external.infoUrl ? (
                     <InfoLink
@@ -179,7 +184,7 @@ export const ScheduleTableCompact: React.FC<Props> = ({ data }) => {
   );
 };
 
-export const ScheduleTableBackCompact: React.FC<Props> = ({ data }) => {
+export const ScheduleTableBackCompact: React.FC<Props> = ({ data, date }) => {
   const { internalScheduleRow } =
     data?.find(({ internalScheduleRow }) => internalScheduleRow) || {};
 
@@ -212,14 +217,14 @@ export const ScheduleTableBackCompact: React.FC<Props> = ({ data }) => {
               externalScheduleRow: external,
               internalScheduleRow: internal,
             } = item;
+
+            date.setHours(0, 0, 0, 0);
+
+            const startTimeSec = external.startTimeSec;
+            const startFullDateSec = date.getTime() + startTimeSec * 1000;
+
             return (
-              <StyledTr
-                isInPast={
-                  external.startTimeSec
-                    ? isInPast(external.startTimeSec)
-                    : isInPast(external.middleTimeSec)
-                }
-              >
+              <StyledTr isInPast={isInPast(startFullDateSec)}>
                 <StyledTd>
                   {external.infoUrl ? (
                     <InfoLink

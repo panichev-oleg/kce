@@ -1,14 +1,11 @@
 import { externalScheduleUrl } from "./constants";
-import { getExternalBackSchedule } from "./data";
 
-export const isInPast = (seconds: number) => {
-  if (!seconds) {
+export const isInPast = (dateSec: number) => {
+  if (!dateSec) {
     return false;
   }
 
-  const now = new Date();
-  const secondsNow = now.getHours() * 60 * 60 + now.getMinutes() * 60;
-  return seconds < secondsNow;
+  return dateSec < new Date().getTime();
 };
 
 export const timeToSeconds = (time: string) => {

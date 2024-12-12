@@ -9,9 +9,9 @@ import {
   slowTransferSec,
 } from "../helpers/constants";
 
-const TransferInfo = styled.span<{ isHighligted?: boolean }>`
+const TransferInfo = styled.span<{ isHighlighted?: boolean }>`
   font-size: 0.75rem;
-  ${({ isHighligted }) => `${isHighligted && "color: red;"}`};
+  ${({ isHighlighted }) => `${isHighlighted && "color: red;"}`};
 `;
 
 const renderTimeCell = (timeSec?: number) => {
@@ -41,7 +41,7 @@ const renderTransferInfo = (
     return (
       <span>
         →
-        <TransferInfo isHighligted={isHighlighted}>
+        <TransferInfo isHighlighted={isHighlighted}>
           {transferTimeSec / 60} мин
         </TransferInfo>
       </span>

@@ -100,7 +100,8 @@ function App() {
 
       <u>
         <UnstyledLink href="#" onClick={gotoToday}>
-          Дата: {viewDate}
+          Дата: {viewDate}(
+          {date.toLocaleDateString("RU-ru", { weekday: "short" })})
         </UnstyledLink>
       </u>
 

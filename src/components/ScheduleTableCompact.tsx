@@ -119,14 +119,16 @@ export const ScheduleTableCompact: React.FC<Props> = ({ data, date }) => {
               internalScheduleRow: internal,
             } = item;
 
-            date.setHours(0, 0, 0, 0);
+            const dayStartOfDay = new Date(date.getTime());
+            dayStartOfDay.setHours(0, 0, 0, 0);
 
             const startTimeSec =
               internal?.startTimeSec ||
               external.startTimeSec ||
               external.middleTimeSec;
 
-            const startFullDateSec = date.getTime() + startTimeSec * 1000;
+            const startFullDateSec =
+              dayStartOfDay.getTime() + startTimeSec * 1000;
 
             return (
               <StyledTr isInPast={isInPast(startFullDateSec)}>
@@ -218,10 +220,12 @@ export const ScheduleTableBackCompact: React.FC<Props> = ({ data, date }) => {
               internalScheduleRow: internal,
             } = item;
 
-            date.setHours(0, 0, 0, 0);
+            const dayStartOfDay = new Date(date.getTime());
+            dayStartOfDay.setHours(0, 0, 0, 0);
 
             const startTimeSec = external.startTimeSec;
-            const startFullDateSec = date.getTime() + startTimeSec * 1000;
+            const startFullDateSec =
+              dayStartOfDay.getTime() + startTimeSec * 1000;
 
             return (
               <StyledTr isInPast={isInPast(startFullDateSec)}>

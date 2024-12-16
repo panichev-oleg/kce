@@ -1,3 +1,8 @@
+// TODO:
+// 1. Optimization for internal (parse strings directly to object, don't use react html parser)
+// 2. Internal read ID of route instead of just index
+// 3. Link to route (both internal and external)
+
 import { JSONContent } from "html-to-json-parser/dist/types";
 import { Entry, MergedSchedule, TransferType } from "../types";
 import { HTMLToJSON } from "html-to-json-parser";
@@ -17,11 +22,11 @@ import {
   internalMiddleStationId,
   internalStartStationId,
   internalMiddleStationName,
-  internalMiddleToFinishTimeMin,
   internalStartStationName,
   internalTablePattern,
 } from "./constants";
-import { timeToSeconds } from "./utils";
+import { hasTimeValue, timeToSeconds } from "./utils";
+import { tableToArraysFromHTML } from "./parser";
 
 const parseExternalData = (json: JSONContent) => {
   const result: Array<Entry> = [];
@@ -68,9 +73,8 @@ const parseExternalData = (json: JSONContent) => {
 };
 
 const parseInternalData = (
-  json: JSONContent,
-  isBackSchedule: boolean,
-  isWeekend: boolean
+  data: Array<Array<string>>,
+  isBackSchedule: boolean
 ) => {
   const resultObj: Record<string, Entry> = {};
 
@@ -82,92 +86,48 @@ const parseInternalData = (
         internalBackFinishStationId,
       ];
 
-  const workingDaysOnlyColumnNumbers: Array<number> = [];
-  const allDaysColumnNumbers: Array<number> = [];
+  let stationId = 0;
 
-  /* @ts-ignore */
-  const weekDaysRow = json.content[1].content[1];
-
-  /* @ts-ignore */
-  weekDaysRow.content.forEach((item, idx) => {
-    const row = item as JSONContent;
-    /* @ts-ignore */
-    if (row.type === "td" && row.attributes.class === "s3") {
-      if (row.content[0] === "Пн-Пт") {
-        workingDaysOnlyColumnNumbers.push(idx + 1); // +1 because for this row one cell is missing
-        allDaysColumnNumbers.push(idx + 1);
-      }
-      if (row.content[0] === "Щоденно") {
-        allDaysColumnNumbers.push(idx + 1);
-      }
+  data.forEach((item, idx) => {
+    if (idx < 7 || item.length < 2) {
+      return;
     }
-  });
+    stationId++;
+    const stationIdStr = `${stationId}`;
 
-  /* @ts-ignore */
-  json.content[1].content.forEach((item, idx) => {
-    const row = item as JSONContent;
-    /* @ts-ignore */
-    const id = row.content[0].attributes.id;
-    /* @ts-ignore */
-    const name = row.content[1]?.content?.[0];
-
-    /* @ts-ignore */
     if (
-      idx < 3 ||
-      row.type !== "tr" ||
-      !name ||
-      ![
-        startStationId,
-        middleStationId,
-        finishStationId,
-        /* @ts-ignore */
-      ].includes(id)
+      ![startStationId, middleStationId, finishStationId].includes(stationIdStr)
     ) {
       return;
     }
 
-    /* @ts-ignore */
-    row.content.forEach((item, idx) => {
-      if (
-        /* @ts-ignore */
-        item.type !== "td" ||
-        /* @ts-ignore */
-        !["s5", "s7", "s9"].includes(item.attributes.class) ||
-        (isWeekend && workingDaysOnlyColumnNumbers.includes(idx))
-      ) {
-        return;
-      }
+    let departureItems = item.filter(Boolean);
 
-      /* @ts-ignore */
-      const value = item.content[0];
+    departureItems = departureItems.filter((value, idx) => {
+      return (
+        (!(idx % 2) && !hasTimeValue(departureItems[idx + 1])) ||
+        (idx % 2 && hasTimeValue(value))
+      );
+    });
+
+    departureItems.forEach((value, idx) => {
       const key =
-        id === startStationId
+        stationIdStr === startStationId
           ? "start"
-          : id === middleStationId
+          : stationIdStr === middleStationId
           ? "middle"
           : "end";
 
       resultObj[idx] = {
         ...(resultObj[idx] || {}),
         number: `${idx}`,
-        // [`${key}Id`]: name,
-        [`${key}Id`]: id,
-        [`${key}TimeSec`]: timeToSeconds(value),
+        [`${key}Id`]: stationIdStr,
+        [`${key}TimeSec`]: hasTimeValue(value) ? timeToSeconds(value) : -1,
       };
     });
   });
 
   const result: Array<Entry> = Object.values(resultObj).map((entry) => entry);
-
-  if (!isBackSchedule) {
-    result.forEach((item, idx) => {
-      result[idx] = {
-        ...item,
-        endId: finishStationId,
-        endTimeSec: item.middleTimeSec + internalMiddleToFinishTimeMin * 60,
-      };
-    });
-  }
 
   return result;
 };
@@ -192,20 +152,15 @@ export const getInternalData = async (
   date: string,
   isBackSchedule: boolean
 ) => {
-  const url = `${process.env.PUBLIC_URL}/static/eltrain_internal.txt`;
-  const urlBack = `${process.env.PUBLIC_URL}/static/eltrain_internal_back.txt`;
+  const direction = isBackSchedule ? 1 : 2;
+  const url = `${process.env.PUBLIC_URL}/static/internal_direction_${direction}_date_${date}.txt`;
 
-  const response = await fetch(isBackSchedule ? urlBack : url);
+  const response = await fetch(url);
   const html = await response.text();
   const table = html.match(internalTablePattern)?.[0] || "";
-  const json = await HTMLToJSON(table);
+  const parsedTable = tableToArraysFromHTML(table);
 
-  const isWeekend = [6, 0].includes(new Date(date).getDay());
-  const data = parseInternalData(
-    json as JSONContent,
-    isBackSchedule,
-    isWeekend
-  );
+  const data = parseInternalData(parsedTable, isBackSchedule);
 
   return data;
 };

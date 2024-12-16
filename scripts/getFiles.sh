@@ -6,13 +6,12 @@ externalStartStationId="83" # борщаговка
 externalMiddleStationId="85" # святошин
 externalFinishStationId="88" # ирпень
 
-INTERNAL_URL="https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=433390657&range=A1:Z23"
-INTERNAL_BACK_URL="https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRXpHpl4haRkvPX3UxrurO7U-Bt0iAjdrAv1adBTEsOryZCcfOxOP809ETCSrdpF88PocTONiRg3ycZ/pubhtml/sheet?headers=false&gid=28169577&range=A1:Z23"
-
-INTERNAL_FILE_NAME="./public/static/eltrain_internal.txt"
-INTERNAL_BACK_FILE_NAME="./public/static/eltrain_internal_back.txt"
+INTERNAL_URL="https://swrailway.gov.ua/timetable/eltrain/?gid=1&rid=480&reverse=DIRECTION&eventdate=DATE&half=1&count=5"
+EXTERNAL_URL="https://swrailway.gov.ua/timetable/eltrain/?sid1=FROM_ID&sid2=TO_ID&eventdate=DATE"
 
 DIRECTORY="./public/static"
+
+DAYS_COUNT=10
 
 # Check if the directory exists
 if [ -d "$DIRECTORY" ]; then
@@ -32,12 +31,14 @@ getFilesExternal() {
     TO_ID=$2
 
     # Loop through the next 10 days
-    for ((i=0; i<=10; i++)); do
+    for ((i=0; i<=DAYS_COUNT; i++)); do
         # Calculate the date for the current iteration
         DATE=$(date -d "$CURRENT_DATE + $i days" +'%Y-%m-%d')
 
         # URL to download the file from
-        URL="https://swrailway.gov.ua/timetable/eltrain/?sid1=${FROM_ID}&sid2=${TO_ID}&eventdate=${DATE}"
+        URL=${EXTERNAL_URL/DATE/$DATE}
+        URL=${URL/FROM_ID/$FROM_ID}
+        URL=${URL/TO_ID/$TO_ID}
 
         # Destination where the file will be saved
         DEST="./public/static/eltrain_from_${FROM_ID}_to_${TO_ID}_date_${DATE}.txt"
@@ -50,16 +51,26 @@ getFilesExternal() {
 }
 
 getFilesInternal() {
-    # URL to download the file from
-    URL=$1
+    DIRECTION=$1
 
-    # Destination where the file will be saved
-    DEST=$2
+    # Loop through the next 10 days
+    for ((i=0; i<=DAYS_COUNT; i++)); do
+        # Calculate the date for the current iteration
+        DATE=$(date -d "$CURRENT_DATE + $i days" +'%Y-%m-%d')
 
-    echo URL
+        # URL to download the file from
+        URL=$INTERNAL_URL
+        URL=${URL/DATE/$DATE}
+        URL=${URL/DIRECTION/$DIRECTION}
 
-    # Download the file
-    wget "$URL" -O "$DEST"
+        # Destination where the file will be saved
+        DEST="./public/static/internal_direction_${DIRECTION}_date_${DATE}.txt"
+
+        echo $URL
+
+        # Download the file
+        wget "$URL" -O "$DEST"
+    done
 }
 
 getFilesExternal $externalStartStationId $externalFinishStationId
@@ -67,5 +78,5 @@ getFilesExternal $externalMiddleStationId $externalFinishStationId
 getFilesExternal $externalFinishStationId $externalMiddleStationId
 getFilesExternal $externalFinishStationId $externalStartStationId
 
-getFilesInternal $INTERNAL_URL $INTERNAL_FILE_NAME
-getFilesInternal $INTERNAL_BACK_URL $INTERNAL_BACK_FILE_NAME
+getFilesInternal "2"
+getFilesInternal "1"

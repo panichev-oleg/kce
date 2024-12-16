@@ -1,5 +1,6 @@
 export type Entry = {
-  number: string;
+  id?: string; // internal id, used for URL redirection to UZ website
+  number: string; // route number, used in schedules and shown to user
   startId: string;
   middleId: string;
   endId: string;

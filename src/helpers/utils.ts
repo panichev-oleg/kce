@@ -23,6 +23,10 @@ export const secondsToTime = (seconds: number) => {
   return `${hoursStr}:${minsStr}`;
 };
 
+export const hasTimeValue = (time: string) => {
+  return time.includes(":");
+};
+
 export const getExternalUrl = (fromId: string, toId: string, date: string) => {
   return externalScheduleUrl
     .replace(":fromId", fromId)

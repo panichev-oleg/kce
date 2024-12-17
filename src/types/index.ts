@@ -31,3 +31,8 @@ export enum InternalDirection {
   BACK = 1,
   FORWARD = 2,
 }
+
+export type InternalScheduleInputCell = {
+  text: string;
+  tid: string | null;
+};

@@ -4,7 +4,13 @@
 // 3. Link to route (both internal and external)
 
 import { JSONContent } from "html-to-json-parser/dist/types";
-import { Entry, MergedSchedule, TransferType } from "../types";
+import {
+  Entry,
+  InternalDirection,
+  InternalScheduleInputCell,
+  MergedSchedule,
+  TransferType,
+} from "../types";
 import { HTMLToJSON } from "html-to-json-parser";
 import {
   externalFinishStationId,
@@ -73,7 +79,7 @@ const parseExternalData = (json: JSONContent) => {
 };
 
 const parseInternalData = (
-  data: Array<Array<string>>,
+  data: Array<Array<InternalScheduleInputCell>>,
   isBackSchedule: boolean
 ) => {
   const resultObj: Record<string, Entry> = {};
@@ -88,8 +94,19 @@ const parseInternalData = (
 
   let stationId = 0;
 
-  data.forEach((item, idx) => {
-    if (idx < 7 || item.length < 2) {
+  const routeData = data[1]
+    .filter(({ text, tid }) => text && tid)
+    .map(({ text, tid }) => {
+      return {
+        tid: tid as string,
+        text: text.split(",")[0],
+      };
+    });
+
+  const textData = data.map((row) => row.map(({ text }) => text));
+
+  textData.forEach((item, idx) => {
+    if (idx < 3 || item.length < 2) {
       return;
     }
     stationId++;
@@ -120,7 +137,8 @@ const parseInternalData = (
 
       resultObj[idx] = {
         ...(resultObj[idx] || {}),
-        number: `${idx}`,
+        id: routeData[idx].tid,
+        number: routeData[idx].text,
         [`${key}Id`]: stationIdStr,
         [`${key}TimeSec`]: hasTimeValue(value) ? timeToSeconds(value) : -1,
       };
@@ -152,7 +170,9 @@ export const getInternalData = async (
   date: string,
   isBackSchedule: boolean
 ) => {
-  const direction = isBackSchedule ? 1 : 2;
+  const direction = isBackSchedule
+    ? InternalDirection.BACK
+    : InternalDirection.FORWARD;
   const url = `${process.env.PUBLIC_URL}/static/internal_direction_${direction}_date_${date}.txt`;
 
   const response = await fetch(url);

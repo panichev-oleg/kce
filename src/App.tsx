@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { ScheduleTable, ScheduleTableBack } from "./components/ScheduleTable";
-import { AppStatus, MergedSchedule } from "./types";
+import { AppStatus, InternalDirection, MergedSchedule } from "./types";
 import {
   getExternalBackSchedule,
   getExternalSchedule,
@@ -21,12 +21,10 @@ import {
   externalMiddleStationName,
   externalStartStationId,
   externalStartStationName,
-  internalBackUrl,
   internalFinishStationName,
   internalStartStationName,
-  internalUrl,
 } from "./helpers/constants";
-import { getExternalUrl } from "./helpers/utils";
+import { getExternalUrl, getInternalUrl } from "./helpers/utils";
 import { UnstyledLink, Link, ScheduleList } from "./components/shared";
 import { ArrowLeft, ArrowRight } from "./components/Arrow";
 
@@ -138,7 +136,11 @@ function App() {
       <Collapsible title="Посмотреть полное расписание">
         <ScheduleList>
           <li>
-            <Link href={internalUrl} target="_blank" rel="noreferrer">
+            <Link
+              href={getInternalUrl(InternalDirection.FORWARD, viewDate)}
+              target="_blank"
+              rel="noreferrer"
+            >
               Городская электричка ({internalStartStationName} -{" "}
               {internalFinishStationName})
             </Link>
@@ -193,7 +195,11 @@ function App() {
       <Collapsible title="Посмотреть полное расписание">
         <ScheduleList>
           <li>
-            <Link href={internalBackUrl} target="_blank" rel="noreferrer">
+            <Link
+              href={getInternalUrl(InternalDirection.BACK, viewDate)}
+              target="_blank"
+              rel="noreferrer"
+            >
               Городская электричка ({internalFinishStationName} -{" "}
               {internalStartStationName})
             </Link>

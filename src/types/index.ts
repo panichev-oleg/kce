@@ -26,3 +26,8 @@ export type MergedScheduleItem = {
 export type MergedSchedule = Array<MergedScheduleItem>;
 
 export type AppStatus = "loading" | "loaded" | "error";
+
+export enum InternalDirection {
+  BACK = 1,
+  FORWARD = 2,
+}

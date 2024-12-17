@@ -1,4 +1,5 @@
-import { externalScheduleUrl } from "./constants";
+import { InternalDirection } from "../types";
+import { externalScheduleUrl, internalScheduleUrl } from "./constants";
 
 export const isInPast = (dateSec: number) => {
   if (!dateSec) {
@@ -31,5 +32,11 @@ export const getExternalUrl = (fromId: string, toId: string, date: string) => {
   return externalScheduleUrl
     .replace(":fromId", fromId)
     .replace(":toId", toId)
+    .replace(":date", date);
+};
+
+export const getInternalUrl = (direction: InternalDirection, date: string) => {
+  return internalScheduleUrl
+    .replace(":direction", `${direction}`)
     .replace(":date", date);
 };

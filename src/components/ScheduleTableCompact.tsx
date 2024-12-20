@@ -144,6 +144,8 @@ export const ScheduleTableCompact: React.FC<Props> = ({ data, date }) => {
                   ) : (
                     external.number
                   )}
+                  {" / "}
+                  {internal?.number || "—"}
                 </StyledTd>
 
                 <StyledTd>{renderTimeCell(internal?.startTimeSec)} </StyledTd>
@@ -241,6 +243,8 @@ export const ScheduleTableBackCompact: React.FC<Props> = ({ data, date }) => {
                   ) : (
                     external.number
                   )}
+                  {" / "}
+                  {internal?.number || "—"}
                 </StyledTd>
 
                 <StyledTd>{renderTimeCell(external.startTimeSec)} </StyledTd>

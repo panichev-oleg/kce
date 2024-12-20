@@ -1,3 +1,11 @@
+/**
+ * TODO:
+ *
+ * 1. Link from internal route number
+ * 2. Link from external route number
+ * 3. New parser for external schedule
+ */
+
 import React from "react";
 import "./App.css";
 import { ScheduleTable, ScheduleTableBack } from "./components/ScheduleTable";

@@ -70,6 +70,7 @@ const StyledTh = styled.th`
 const StyledTd = styled.td`
   padding: 0.25rem 0.5rem;
   vertical-align: top;
+  white-space: nowrap;
 `;
 
 const TransferContainer = styled.div`

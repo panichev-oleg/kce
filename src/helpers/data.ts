@@ -50,6 +50,8 @@ const parseExternalData = (json: JSONContent) => {
 
     const entry: Entry = {
       /* @ts-ignore */
+      id: row.content[1].content[0].attributes?.href.split("=")[1],
+      /* @ts-ignore */
       number: row.content[1].content[0].content[1].content[0],
       /* @ts-ignore */
       startId: row.content[9].content[0].attributes.href.split("=")[1],

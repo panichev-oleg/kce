@@ -8,6 +8,7 @@ import {
   fastTransferSec,
   slowTransferSec,
 } from "../helpers/constants";
+import { RouteHeader } from "./RouteHeader";
 
 const TransferInfoContainer = styled.span`
   display: flex;
@@ -133,19 +134,7 @@ export const ScheduleTableCompact: React.FC<Props> = ({ data, date }) => {
             return (
               <StyledTr isInPast={isInPast(startFullDateSec)}>
                 <StyledTd>
-                  {external.infoUrl ? (
-                    <InfoLink
-                      href={externalInfoUrl.replace(":href", external.infoUrl)}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {external.number} (!)
-                    </InfoLink>
-                  ) : (
-                    external.number
-                  )}
-                  {" / "}
-                  {internal?.number || "—"}
+                  <RouteHeader route={item} />
                 </StyledTd>
 
                 <StyledTd>{renderTimeCell(internal?.startTimeSec)} </StyledTd>
@@ -232,19 +221,7 @@ export const ScheduleTableBackCompact: React.FC<Props> = ({ data, date }) => {
             return (
               <StyledTr isInPast={isInPast(startFullDateSec)}>
                 <StyledTd>
-                  {external.infoUrl ? (
-                    <InfoLink
-                      href={externalInfoUrl.replace(":href", external.infoUrl)}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {external.number} (!)
-                    </InfoLink>
-                  ) : (
-                    external.number
-                  )}
-                  {" / "}
-                  {internal?.number || "—"}
+                  <RouteHeader route={item} />
                 </StyledTd>
 
                 <StyledTd>{renderTimeCell(external.startTimeSec)} </StyledTd>

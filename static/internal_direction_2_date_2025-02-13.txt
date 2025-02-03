@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x46" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x336" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -72,7 +72,7 @@ input.train { font-size:16px; width:190px;}
 </font></td>
  <td width=100%><div align=center> </div></td>
 <td nowrap><div align=right>
-<a href=".?gid=1&rid=480&reverse=2&eventdate=2025-02-01&half=1&count=5"><img src=/img/lng/ukr_off.gif></a><!--<a href=".?gid=1&rid=480&reverse=2&eventdate=2025-02-01&half=1&count=5&lng=_ru"><img src=/img/lng/rus_off.gif></a>--><a href=".?gid=1&rid=480&reverse=2&eventdate=2025-02-01&half=1&count=5&lng=_en"><img src=/img/lng/eng_off.gif></a>
+<a href=".?gid=1&rid=480&reverse=2&eventdate=2025-02-13&half=1&count=5"><img src=/img/lng/ukr_off.gif></a><!--<a href=".?gid=1&rid=480&reverse=2&eventdate=2025-02-13&half=1&count=5&lng=_ru"><img src=/img/lng/rus_off.gif></a>--><a href=".?gid=1&rid=480&reverse=2&eventdate=2025-02-13&half=1&count=5&lng=_en"><img src=/img/lng/eng_off.gif></a>
 </div></td></tr>
 <TR ><TD colspan=3 >
 <center>
@@ -799,7 +799,7 @@ input.train { font-size:16px; width:190px;}
 Всі дні
 <input name="dateR" type="radio" value="1">
 На дату
-<input name="eventdate" type="text" value="2025-02-01" class='inpDate eventdate' readonly >
+<input name="eventdate" type="text" value="2025-02-13" class='inpDate eventdate' readonly >
 <input name="nofar" type="checkbox" value="1" >
 Скорочений вигляд
 
@@ -844,7 +844,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
         
     <li><a href="#tabs-trains2" class="tb trains"><img align=center src=/img/train24.png>
     <b> Потяги </b>(Назад) 
-      <sup><span id=fav_cnt style='font-size:10px;color:blue;font-weight:bold'>18</span></sup></a> </li>
+      <sup><span id=fav_cnt style='font-size:10px;color:blue;font-weight:bold'>25</span></sup></a> </li>
       
     <li><a href="#tabs-map" class="tb" ><img align=center src=/img/rekl_map.png width=24> <b>НА КАРТІ</b></a></li>
     <li><a href="#tabs-notes" class="tb notes"><img align=center src="/img/rekl_list.png" width=24> Зміни руху  
@@ -1107,6 +1107,27 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   <td colspan=2 class=course>&nbsp;Святошин – Святошин&nbsp;</td>
   
   <td width=1 class=sh_line ><img src=/img/spacer.gif></td>
+  <td colspan=2 class=course>&nbsp;Дарниця – Святошин&nbsp;</td>
+  
+  <td width=1 class=sh_line ><img src=/img/spacer.gif></td>
+  <td colspan=2 class=course>&nbsp;Святошин – Святошин&nbsp;</td>
+  
+  <td width=1 class=sh_line ><img src=/img/spacer.gif></td>
+  <td colspan=2 class=course>&nbsp;Святошин – Святошин&nbsp;</td>
+  
+  <td width=1 class=sh_line ><img src=/img/spacer.gif></td>
+  <td colspan=2 class=course>&nbsp;Святошин – Святошин&nbsp;</td>
+  
+  <td width=1 class=sh_line ><img src=/img/spacer.gif></td>
+  <td colspan=2 class=course>&nbsp;Святошин – Святошин&nbsp;</td>
+  
+  <td width=1 class=sh_line ><img src=/img/spacer.gif></td>
+  <td colspan=2 class=course>&nbsp;Святошин – Святошин&nbsp;</td>
+  
+  <td width=1 class=sh_line ><img src=/img/spacer.gif></td>
+  <td colspan=2 class=course>&nbsp;Святошин – Святошин&nbsp;</td>
+  
+  <td width=1 class=sh_line ><img src=/img/spacer.gif></td>
   <td colspan=2 class=course>&nbsp;Святошин – Святошин&nbsp;</td>
   
   <td width=1 class=sh_line ><img src=/img/spacer.gif></td>
@@ -1179,8 +1200,28 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   </td>
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=18146">А03, 
+    <br> крім сб., нд.
+    
+    </font></a> 
+    
+    
+    
+  </td>
+  
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25211">А04, 
     <br> щоденно
+    
+    </font></a> 
+    
+    
+    
+  </td>
+  
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25212">А05, 
+    <br> крім сб., нд.
     
     </font></a> 
     
@@ -1199,8 +1240,28 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   </td>
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25214">А07, 
+    <br> крім сб., нд.
+    
+    </font></a> 
+    
+    
+    
+  </td>
+  
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25215">А08, 
     <br> щоденно
+    
+    </font></a> 
+    
+    
+    
+  </td>
+  
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25221">А09, 
+    <br> крім сб., нд.
     
     </font></a> 
     
@@ -1279,6 +1340,16 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   </td>
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25238">А17, 
+    <br> крім сб., нд.
+    
+    </font></a> 
+    
+    
+    
+  </td>
+  
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25239">А18, 
     <br> щоденно
     
@@ -1289,8 +1360,28 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   </td>
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25242">А19, 
+    <br> крім сб., нд.
+    
+    </font></a> 
+    
+    
+    
+  </td>
+  
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25245">А20, 
     <br> щоденно
+    
+    </font></a> 
+    
+    
+    
+  </td>
+  
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25247">А21, 
+    <br> крім сб., нд.
     
     </font></a> 
     
@@ -1413,6 +1504,34 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td class="on_right_b">приб.</td>
   <td class="on_right_b">відпр.</td>
+   
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td class="on_right_b">приб.</td>
+  <td class="on_right_b">відпр.</td>
+   
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td class="on_right_b">приб.</td>
+  <td class="on_right_b">відпр.</td>
+   
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td class="on_right_b">приб.</td>
+  <td class="on_right_b">відпр.</td>
+   
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td class="on_right_b">приб.</td>
+  <td class="on_right_b">відпр.</td>
+   
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td class="on_right_b">приб.</td>
+  <td class="on_right_b">відпр.</td>
+   
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td class="on_right_b">приб.</td>
+  <td class="on_right_b">відпр.</td>
+   
+  <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
+  <td class="on_right_b">приб.</td>
+  <td class="on_right_b">відпр.</td>
   
   </tr>
    <tr class=pix><td colspan=150><img src=/img/spacer.gif></td></tr>
@@ -1426,13 +1545,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>05:39</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>06:39</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>07:09</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>07:39</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>08:09</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>08:39</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>09:09</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>09:39</td>
@@ -1456,10 +1587,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>15:39</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>16:09</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>16:39</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>17:09</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>17:39</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>18:09</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>18:39</td>
@@ -1485,13 +1625,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>05:46</td><td width=46 class=q1 nowrap>05:47</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>–</td><td width=46 class=q1 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>06:46</td><td width=46 class=q1 nowrap>06:47</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:16</td><td width=46 class=q1 nowrap>07:17</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:46</td><td width=46 class=q1 nowrap>07:47</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:16</td><td width=46 class=q1 nowrap>08:17</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:46</td><td width=46 class=q1 nowrap>08:47</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:16</td><td width=46 class=q1 nowrap>09:17</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:46</td><td width=46 class=q1 nowrap>09:47</td>
@@ -1515,10 +1667,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>15:46</td><td width=46 class=q1 nowrap>15:47</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>16:16</td><td width=46 class=q1 nowrap>16:17</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>16:46</td><td width=46 class=q1 nowrap>16:47</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:16</td><td width=46 class=q1 nowrap>17:17</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:46</td><td width=46 class=q1 nowrap>17:47</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:16</td><td width=46 class=q1 nowrap>18:17</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:46</td><td width=46 class=q1 nowrap>18:47</td>
@@ -1544,13 +1705,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>05:50</td><td width=46 class=q1 nowrap>05:51</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>–</td><td width=46 class=q1 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>06:50</td><td width=46 class=q1 nowrap>06:51</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:20</td><td width=46 class=q1 nowrap>07:21</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:50</td><td width=46 class=q1 nowrap>07:51</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:20</td><td width=46 class=q1 nowrap>08:21</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:50</td><td width=46 class=q1 nowrap>08:51</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:20</td><td width=46 class=q1 nowrap>09:21</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:50</td><td width=46 class=q1 nowrap>09:51</td>
@@ -1574,10 +1747,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>15:50</td><td width=46 class=q1 nowrap>15:51</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>16:20</td><td width=46 class=q1 nowrap>16:21</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>16:50</td><td width=46 class=q1 nowrap>16:51</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:20</td><td width=46 class=q1 nowrap>17:21</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:50</td><td width=46 class=q1 nowrap>17:51</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:20</td><td width=46 class=q1 nowrap>18:21</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:50</td><td width=46 class=q1 nowrap>18:51</td>
@@ -1603,13 +1785,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>05:55</td><td width=46 class=q1 nowrap>05:56</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>–</td><td width=46 class=q1 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>06:55</td><td width=46 class=q1 nowrap>06:56</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:25</td><td width=46 class=q1 nowrap>07:26</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:55</td><td width=46 class=q1 nowrap>07:56</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:25</td><td width=46 class=q1 nowrap>08:26</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:55</td><td width=46 class=q1 nowrap>08:56</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:25</td><td width=46 class=q1 nowrap>09:26</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:55</td><td width=46 class=q1 nowrap>09:56</td>
@@ -1633,10 +1827,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>15:55</td><td width=46 class=q1 nowrap>15:56</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>16:25</td><td width=46 class=q1 nowrap>16:26</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>16:55</td><td width=46 class=q1 nowrap>16:56</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:25</td><td width=46 class=q1 nowrap>17:26</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:55</td><td width=46 class=q1 nowrap>17:56</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:25</td><td width=46 class=q1 nowrap>18:26</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:55</td><td width=46 class=q1 nowrap>18:56</td>
@@ -1662,13 +1865,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>05:59</td><td width=46 class=q1 nowrap>06:00</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>–</td><td width=46 class=q1 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>06:59</td><td width=46 class=q1 nowrap>07:00</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:29</td><td width=46 class=q1 nowrap>07:30</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:59</td><td width=46 class=q1 nowrap>08:00</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:29</td><td width=46 class=q1 nowrap>08:30</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:59</td><td width=46 class=q1 nowrap>09:00</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:29</td><td width=46 class=q1 nowrap>09:30</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:59</td><td width=46 class=q1 nowrap>10:00</td>
@@ -1692,10 +1907,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>15:59</td><td width=46 class=q1 nowrap>16:00</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>16:29</td><td width=46 class=q1 nowrap>16:30</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>16:59</td><td width=46 class=q1 nowrap>17:00</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:29</td><td width=46 class=q1 nowrap>17:30</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:59</td><td width=46 class=q1 nowrap>18:00</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:29</td><td width=46 class=q1 nowrap>18:30</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:59</td><td width=46 class=q1 nowrap>19:00</td>
@@ -1721,13 +1945,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>06:02</td><td width=46 class=q0 nowrap>06:03</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>07:02</td><td width=46 class=q0 nowrap>07:03</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>07:32</td><td width=46 class=q0 nowrap>07:33</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>08:02</td><td width=46 class=q0 nowrap>08:03</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>08:32</td><td width=46 class=q0 nowrap>08:33</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>09:02</td><td width=46 class=q0 nowrap>09:03</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>09:32</td><td width=46 class=q0 nowrap>09:33</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>10:02</td><td width=46 class=q0 nowrap>10:03</td>
@@ -1751,10 +1987,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>16:02</td><td width=46 class=q0 nowrap>16:03</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>16:32</td><td width=46 class=q0 nowrap>16:33</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>17:02</td><td width=46 class=q0 nowrap>17:03</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>17:32</td><td width=46 class=q0 nowrap>17:33</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>18:02</td><td width=46 class=q0 nowrap>18:03</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>18:32</td><td width=46 class=q0 nowrap>18:33</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>19:02</td><td width=46 class=q0 nowrap>19:03</td>
@@ -1780,13 +2025,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>06:13</td><td width=46 class=q1 nowrap>06:14</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>–</td><td width=46 class=q1 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:13</td><td width=46 class=q1 nowrap>07:14</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:43</td><td width=46 class=q1 nowrap>07:44</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:13</td><td width=46 class=q1 nowrap>08:14</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:43</td><td width=46 class=q1 nowrap>08:44</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:13</td><td width=46 class=q1 nowrap>09:14</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:43</td><td width=46 class=q1 nowrap>09:44</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>10:13</td><td width=46 class=q1 nowrap>10:14</td>
@@ -1810,10 +2067,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>16:13</td><td width=46 class=q1 nowrap>16:14</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>16:43</td><td width=46 class=q1 nowrap>16:44</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:13</td><td width=46 class=q1 nowrap>17:14</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:43</td><td width=46 class=q1 nowrap>17:44</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:13</td><td width=46 class=q1 nowrap>18:14</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:43</td><td width=46 class=q1 nowrap>18:44</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>19:13</td><td width=46 class=q1 nowrap>19:14</td>
@@ -1839,13 +2105,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>06:15</td><td width=46 class=q1 nowrap>06:16</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>–</td><td width=46 class=q1 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:15</td><td width=46 class=q1 nowrap>07:16</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:45</td><td width=46 class=q1 nowrap>07:46</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:15</td><td width=46 class=q1 nowrap>08:16</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:45</td><td width=46 class=q1 nowrap>08:46</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:15</td><td width=46 class=q1 nowrap>09:16</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:45</td><td width=46 class=q1 nowrap>09:46</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>10:15</td><td width=46 class=q1 nowrap>10:16</td>
@@ -1869,10 +2147,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>16:15</td><td width=46 class=q1 nowrap>16:16</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>16:45</td><td width=46 class=q1 nowrap>16:46</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:15</td><td width=46 class=q1 nowrap>17:16</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:45</td><td width=46 class=q1 nowrap>17:46</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:15</td><td width=46 class=q1 nowrap>18:16</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:45</td><td width=46 class=q1 nowrap>18:46</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>19:15</td><td width=46 class=q1 nowrap>19:16</td>
@@ -1898,13 +2185,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>06:18</td><td width=46 class=q0 nowrap>06:19</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>07:18</td><td width=46 class=q0 nowrap>07:19</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>07:48</td><td width=46 class=q0 nowrap>07:49</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>08:18</td><td width=46 class=q0 nowrap>08:19</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>08:48</td><td width=46 class=q0 nowrap>08:49</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>09:18</td><td width=46 class=q0 nowrap>09:19</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>09:48</td><td width=46 class=q0 nowrap>09:49</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>10:19</td><td width=46 class=q0 nowrap>10:20</td>
@@ -1928,10 +2227,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>16:18</td><td width=46 class=q0 nowrap>16:19</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>16:48</td><td width=46 class=q0 nowrap>16:49</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>17:18</td><td width=46 class=q0 nowrap>17:19</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>17:48</td><td width=46 class=q0 nowrap>17:49</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>18:18</td><td width=46 class=q0 nowrap>18:19</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>18:48</td><td width=46 class=q0 nowrap>18:49</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>19:18</td><td width=46 class=q0 nowrap>19:19</td>
@@ -1957,13 +2265,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>06:21</td><td width=46 class=q1 nowrap>06:22</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>–</td><td width=46 class=q1 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:21</td><td width=46 class=q1 nowrap>07:22</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:51</td><td width=46 class=q1 nowrap>07:52</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:21</td><td width=46 class=q1 nowrap>08:22</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:51</td><td width=46 class=q1 nowrap>08:52</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:21</td><td width=46 class=q1 nowrap>09:22</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:51</td><td width=46 class=q1 nowrap>09:52</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>10:21</td><td width=46 class=q1 nowrap>10:22</td>
@@ -1987,10 +2307,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>16:21</td><td width=46 class=q1 nowrap>16:22</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>16:51</td><td width=46 class=q1 nowrap>16:52</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:21</td><td width=46 class=q1 nowrap>17:22</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:51</td><td width=46 class=q1 nowrap>17:52</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:22</td><td width=46 class=q1 nowrap>18:23</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:51</td><td width=46 class=q1 nowrap>18:52</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>19:21</td><td width=46 class=q1 nowrap>19:22</td>
@@ -2016,13 +2345,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>06:23</td><td width=46 class=q1 nowrap>06:24</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>–</td><td width=46 class=q1 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:23</td><td width=46 class=q1 nowrap>07:24</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:53</td><td width=46 class=q1 nowrap>07:54</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:23</td><td width=46 class=q1 nowrap>08:24</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:53</td><td width=46 class=q1 nowrap>08:54</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:23</td><td width=46 class=q1 nowrap>09:24</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:53</td><td width=46 class=q1 nowrap>09:54</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>10:23</td><td width=46 class=q1 nowrap>10:24</td>
@@ -2046,10 +2387,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>16:23</td><td width=46 class=q1 nowrap>16:24</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>16:53</td><td width=46 class=q1 nowrap>16:54</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:23</td><td width=46 class=q1 nowrap>17:24</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:53</td><td width=46 class=q1 nowrap>17:54</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:24</td><td width=46 class=q1 nowrap>18:25</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:53</td><td width=46 class=q1 nowrap>18:54</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>19:23</td><td width=46 class=q1 nowrap>19:24</td>
@@ -2075,13 +2425,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>06:28</td><td width=46 class=q0 nowrap>06:37</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>–</td><td width=46 class=q0 nowrap>07:07</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>07:28</td><td width=46 class=q0 nowrap>07:37</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>07:58</td><td width=46 class=q0 nowrap>08:07</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>08:28</td><td width=46 class=q0 nowrap>08:37</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>08:58</td><td width=46 class=q0 nowrap>09:07</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>09:28</td><td width=46 class=q0 nowrap>09:37</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>09:58</td><td width=46 class=q0 nowrap>10:07</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>10:28</td><td width=46 class=q0 nowrap>10:37</td>
@@ -2105,10 +2467,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>16:28</td><td width=46 class=q0 nowrap>16:37</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>16:58</td><td width=46 class=q0 nowrap>17:07</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>17:28</td><td width=46 class=q0 nowrap>17:37</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>17:58</td><td width=46 class=q0 nowrap>18:07</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>18:28</td><td width=46 class=q0 nowrap>18:37</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>18:58</td><td width=46 class=q0 nowrap>19:07</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>19:28</td><td width=46 class=q0 nowrap>19:37</td>
@@ -2134,13 +2505,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>06:42</td><td width=46 class=q1 nowrap>06:43</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:12</td><td width=46 class=q1 nowrap>07:13</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:42</td><td width=46 class=q1 nowrap>07:43</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:12</td><td width=46 class=q1 nowrap>08:13</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:42</td><td width=46 class=q1 nowrap>08:43</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:12</td><td width=46 class=q1 nowrap>09:13</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:42</td><td width=46 class=q1 nowrap>09:43</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>10:12</td><td width=46 class=q1 nowrap>10:13</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>10:42</td><td width=46 class=q1 nowrap>10:43</td>
@@ -2164,10 +2547,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>16:42</td><td width=46 class=q1 nowrap>16:43</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:12</td><td width=46 class=q1 nowrap>17:13</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:42</td><td width=46 class=q1 nowrap>17:43</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:12</td><td width=46 class=q1 nowrap>18:13</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:42</td><td width=46 class=q1 nowrap>18:43</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>19:12</td><td width=46 class=q1 nowrap>19:13</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>19:42</td><td width=46 class=q1 nowrap>19:43</td>
@@ -2193,13 +2585,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>06:49</td><td width=46 class=q1 nowrap>06:50</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:19</td><td width=46 class=q1 nowrap>07:20</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:49</td><td width=46 class=q1 nowrap>07:50</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:19</td><td width=46 class=q1 nowrap>08:20</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:49</td><td width=46 class=q1 nowrap>08:50</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:19</td><td width=46 class=q1 nowrap>09:20</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:49</td><td width=46 class=q1 nowrap>09:50</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>10:19</td><td width=46 class=q1 nowrap>10:20</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>10:49</td><td width=46 class=q1 nowrap>10:50</td>
@@ -2223,10 +2627,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>16:49</td><td width=46 class=q1 nowrap>16:50</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:19</td><td width=46 class=q1 nowrap>17:20</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:49</td><td width=46 class=q1 nowrap>17:50</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:19</td><td width=46 class=q1 nowrap>18:20</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:49</td><td width=46 class=q1 nowrap>18:50</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>19:19</td><td width=46 class=q1 nowrap>19:20</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>19:49</td><td width=46 class=q1 nowrap>19:50</td>
@@ -2252,13 +2665,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>06:52</td><td width=46 class=q0 nowrap>06:53</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>07:22</td><td width=46 class=q0 nowrap>07:23</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>07:52</td><td width=46 class=q0 nowrap>07:53</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>08:22</td><td width=46 class=q0 nowrap>08:23</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>08:52</td><td width=46 class=q0 nowrap>08:53</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>09:22</td><td width=46 class=q0 nowrap>09:23</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>09:52</td><td width=46 class=q0 nowrap>09:53</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>10:22</td><td width=46 class=q0 nowrap>10:23</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>10:52</td><td width=46 class=q0 nowrap>10:53</td>
@@ -2282,10 +2707,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>16:53</td><td width=46 class=q0 nowrap>16:54</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>17:22</td><td width=46 class=q0 nowrap>17:23</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>17:52</td><td width=46 class=q0 nowrap>17:53</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>18:22</td><td width=46 class=q0 nowrap>18:23</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>18:52</td><td width=46 class=q0 nowrap>18:53</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>19:22</td><td width=46 class=q0 nowrap>19:23</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>19:52</td><td width=46 class=q0 nowrap>19:53</td>
@@ -2311,13 +2745,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>06:57</td><td width=46 class=q1 nowrap>06:58</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:27</td><td width=46 class=q1 nowrap>07:28</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>07:57</td><td width=46 class=q1 nowrap>07:58</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:27</td><td width=46 class=q1 nowrap>08:28</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:57</td><td width=46 class=q1 nowrap>08:58</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:27</td><td width=46 class=q1 nowrap>09:28</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:57</td><td width=46 class=q1 nowrap>09:58</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>10:27</td><td width=46 class=q1 nowrap>10:28</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>10:57</td><td width=46 class=q1 nowrap>10:58</td>
@@ -2341,10 +2787,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>16:57</td><td width=46 class=q1 nowrap>16:58</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:27</td><td width=46 class=q1 nowrap>17:28</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>17:57</td><td width=46 class=q1 nowrap>17:58</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:27</td><td width=46 class=q1 nowrap>18:28</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:57</td><td width=46 class=q1 nowrap>18:58</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>19:27</td><td width=46 class=q1 nowrap>19:28</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>19:57</td><td width=46 class=q1 nowrap>19:58</td>
@@ -2370,13 +2825,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>07:02</td><td width=46 class=q1 nowrap>07:04</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:32</td><td width=46 class=q1 nowrap>07:34</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:02</td><td width=46 class=q1 nowrap>08:04</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:32</td><td width=46 class=q1 nowrap>08:34</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:02</td><td width=46 class=q1 nowrap>09:04</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:32</td><td width=46 class=q1 nowrap>09:34</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>10:02</td><td width=46 class=q1 nowrap>10:04</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>10:32</td><td width=46 class=q1 nowrap>10:34</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>11:02</td><td width=46 class=q1 nowrap>11:04</td>
@@ -2400,10 +2867,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>17:02</td><td width=46 class=q1 nowrap>17:04</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:32</td><td width=46 class=q1 nowrap>17:34</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:02</td><td width=46 class=q1 nowrap>18:04</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:32</td><td width=46 class=q1 nowrap>18:34</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>19:02</td><td width=46 class=q1 nowrap>19:04</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>19:32</td><td width=46 class=q1 nowrap>19:34</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>20:02</td><td width=46 class=q1 nowrap>20:04</td>
@@ -2429,13 +2905,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>07:09</td><td width=46 class=q1 nowrap>07:10</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:39</td><td width=46 class=q1 nowrap>07:40</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:09</td><td width=46 class=q1 nowrap>08:10</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:39</td><td width=46 class=q1 nowrap>08:40</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:09</td><td width=46 class=q1 nowrap>09:10</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:39</td><td width=46 class=q1 nowrap>09:40</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>10:09</td><td width=46 class=q1 nowrap>10:10</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>10:39</td><td width=46 class=q1 nowrap>10:40</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>11:09</td><td width=46 class=q1 nowrap>11:10</td>
@@ -2459,10 +2947,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>17:09</td><td width=46 class=q1 nowrap>17:10</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:39</td><td width=46 class=q1 nowrap>17:40</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:09</td><td width=46 class=q1 nowrap>18:10</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:39</td><td width=46 class=q1 nowrap>18:40</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>19:09</td><td width=46 class=q1 nowrap>19:10</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>19:39</td><td width=46 class=q1 nowrap>19:40</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>20:09</td><td width=46 class=q1 nowrap>20:10</td>
@@ -2488,13 +2985,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>07:14</td><td width=46 class=q0 nowrap>07:16</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>07:44</td><td width=46 class=q0 nowrap>07:46</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>08:14</td><td width=46 class=q0 nowrap>08:16</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>08:44</td><td width=46 class=q0 nowrap>08:46</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>09:14</td><td width=46 class=q0 nowrap>09:16</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>09:44</td><td width=46 class=q0 nowrap>09:46</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>10:14</td><td width=46 class=q0 nowrap>10:16</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>10:44</td><td width=46 class=q0 nowrap>10:46</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>11:14</td><td width=46 class=q0 nowrap>11:16</td>
@@ -2518,10 +3027,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>17:14</td><td width=46 class=q0 nowrap>17:16</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>17:44</td><td width=46 class=q0 nowrap>17:46</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>18:14</td><td width=46 class=q0 nowrap>18:16</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>18:44</td><td width=46 class=q0 nowrap>18:46</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>19:14</td><td width=46 class=q0 nowrap>19:16</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>19:44</td><td width=46 class=q0 nowrap>19:46</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>20:14</td><td width=46 class=q0 nowrap>20:16</td>
@@ -2547,13 +3065,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>07:22</td><td width=46 class=q1 nowrap>07:23</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>07:52</td><td width=46 class=q1 nowrap>07:53</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>08:22</td><td width=46 class=q1 nowrap>08:23</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>08:52</td><td width=46 class=q1 nowrap>08:53</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>09:22</td><td width=46 class=q1 nowrap>09:23</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>09:52</td><td width=46 class=q1 nowrap>09:53</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>10:22</td><td width=46 class=q1 nowrap>10:23</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>10:52</td><td width=46 class=q1 nowrap>10:53</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>11:22</td><td width=46 class=q1 nowrap>11:23</td>
@@ -2577,10 +3107,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q1 width=46>17:22</td><td width=46 class=q1 nowrap>17:23</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>17:52</td><td width=46 class=q1 nowrap>17:53</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>18:22</td><td width=46 class=q1 nowrap>18:23</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>18:52</td><td width=46 class=q1 nowrap>18:53</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>19:22</td><td width=46 class=q1 nowrap>19:23</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q1 width=46>19:52</td><td width=46 class=q1 nowrap>19:53</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q1 width=46>20:22</td><td width=46 class=q1 nowrap>20:23</td>
@@ -2606,13 +3145,25 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>07:29</td><td width=46 class=q0 nowrap>–</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>07:59</td><td width=46 class=q0 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>08:29</td><td width=46 class=q0 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>08:59</td><td width=46 class=q0 nowrap>–</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>09:29</td><td width=46 class=q0 nowrap>–</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>09:59</td><td width=46 class=q0 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>10:29</td><td width=46 class=q0 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>10:59</td><td width=46 class=q0 nowrap>–</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>11:29</td><td width=46 class=q0 nowrap>–</td>
@@ -2636,10 +3187,19 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       <td nowrap class=q0 width=46>17:29</td><td width=46 class=q0 nowrap>–</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>17:59</td><td width=46 class=q0 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>18:29</td><td width=46 class=q0 nowrap>–</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>18:59</td><td width=46 class=q0 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>19:29</td><td width=46 class=q0 nowrap>–</td>
+     
+    <td width=1 class=sh_line><img src=/img/spacer.gif></td>
+      <td nowrap class=q0 width=46>19:59</td><td width=46 class=q0 nowrap>–</td>
      
     <td width=1 class=sh_line><img src=/img/spacer.gif></td>
       <td nowrap class=q0 width=46>20:29</td><td width=46 class=q0 nowrap>–</td>
@@ -2757,7 +3317,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2025-01-31', maxDate: '2025-03-31', dateFormat: 'yy-mm-dd' });
+                    minDate: '2025-02-03', maxDate: '2025-04-03', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -2822,5 +3382,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.35989689826965 секунд
+<!--сгенерено за 0.3775532245636 секунд
 -->

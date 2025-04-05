@@ -3,11 +3,7 @@ import styled from "styled-components";
 import { isInPast, secondsToTime } from "../helpers/utils";
 import { MergedSchedule, MergedScheduleItem } from "../types";
 import { getExternalStopNames } from "../helpers/data";
-import {
-  externalInfoUrl,
-  fastTransferSec,
-  slowTransferSec,
-} from "../helpers/constants";
+import { fastTransferSec, slowTransferSec } from "../helpers/constants";
 import { RouteHeader } from "./RouteHeader";
 
 const TransferInfoContainer = styled.span`
@@ -76,13 +72,6 @@ const StyledTd = styled.td`
 const TransferContainer = styled.div`
   display: flex;
   justify-content: center;
-`;
-
-const InfoLink = styled.a`
-  color: red;
-  text-decoration: none;
-  font-weight: bold;
-  white-space: nowrap;
 `;
 
 type Props = {

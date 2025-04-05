@@ -1,5 +1,6 @@
 import { InternalDirection } from "../types";
 import {
+  externalInfoUrl,
   externalScheduleUrl,
   internalScheduleUrl,
   singleRouteUrl,
@@ -47,4 +48,8 @@ export const getInternalUrl = (direction: InternalDirection, date: string) => {
 
 export const getSingleRouteUrl = (id: string) => {
   return singleRouteUrl.replace(":id", id);
+};
+
+export const getInfoUrl = (id: string) => {
+  return externalInfoUrl.replace(":id", id);
 };

@@ -36,3 +36,10 @@ export type InternalScheduleInputCell = {
   text: string;
   tid: string | null;
 };
+
+export type ExternalScheduleInputCell = {
+  text: string;
+  tid: string | null;
+  sid: string | null;
+  hasAlert: boolean;
+};

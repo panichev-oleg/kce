@@ -1,7 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
 import { MergedScheduleItem } from "../types";
-import { externalInfoUrl } from "../helpers/constants";
 import { Link } from "./shared";
 import { getSingleRouteUrl } from "../helpers/utils";
 
@@ -25,11 +24,7 @@ export const RouteHeader: React.FC<Props> = ({ route }) => {
           <Link href={getSingleRouteUrl(external.id)} target="_blank">
             {external.number}
           </Link>{" "}
-          <InfoLink
-            href={externalInfoUrl.replace(":href", external.infoUrl)}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <InfoLink href={external.infoUrl} target="_blank" rel="noreferrer">
             (!)
           </InfoLink>
         </>

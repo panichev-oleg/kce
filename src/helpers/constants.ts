@@ -21,12 +21,13 @@ export const internalBackMiddleStationId = "2"; // Борщагівка
 export const internalBackFinishStationId = "8"; // Видубичі
 
 export const scheduleDomain = `https://swrailway.gov.ua/timetable/eltrain/`;
-export const externalInfoUrl = `${scheduleDomain}:href#tabs-notes`;
+
 export const externalScheduleUrl = `${scheduleDomain}?sid1=:fromId&sid2=:toId&eventdate=:date`;
 
 export const internalScheduleUrl = `${scheduleDomain}?gid=1&rid=480&reverse=:direction&eventdate=:date&half=1&count=5`;
 
 export const singleRouteUrl = `${scheduleDomain}?tid=:id`;
+export const externalInfoUrl = `${singleRouteUrl}#tabs-notes`;
 
 export const externalTablePattern = /(<table[^>+]id=geo2g.+?<\/table>)/ms;
 export const internalTablePattern =

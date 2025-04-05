@@ -1,17 +1,11 @@
-// TODO:
-// 1. Optimization for internal (parse strings directly to object, don't use react html parser)
-// 2. Internal read ID of route instead of just index
-// 3. Link to route (both internal and external)
-
-import { JSONContent } from "html-to-json-parser/dist/types";
 import {
   Entry,
+  ExternalScheduleInputCell,
   InternalDirection,
   InternalScheduleInputCell,
   MergedSchedule,
   TransferType,
 } from "../types";
-import { HTMLToJSON } from "html-to-json-parser";
 import {
   externalFinishStationId,
   externalFinishStationName,
@@ -31,51 +25,53 @@ import {
   internalStartStationName,
   internalTablePattern,
 } from "./constants";
-import { hasTimeValue, timeToSeconds } from "./utils";
-import { tableToArraysFromHTML } from "./parser";
+import { getInfoUrl, hasTimeValue, timeToSeconds } from "./utils";
+import {
+  tableToArraysFromHTMLExternal,
+  tableToArraysFromHTMLInternal,
+} from "./parser";
 
-const parseExternalData = (json: JSONContent) => {
-  const result: Array<Entry> = [];
+const parseExternalData = (data: Array<Array<ExternalScheduleInputCell>>) => {
+  const routeData = data
+    .filter((_, idx) => idx > 1) // skip 2 first rows
+    .map(([row]) => {
+      return {
+        tid: row.tid as string,
+        text: row.text.split(",")[0],
+        hasAlert: row.hasAlert,
+      };
+    });
 
-  json.content.forEach((item, idx) => {
-    const row = item as JSONContent;
-    if (
-      idx < 6 ||
-      row.type !== "tr" ||
-      /* @ts-ignore */
-      !["on", "onx"].includes(row.attributes?.class)
-    ) {
-      return;
-    }
+  const textData = data.map((row) => row.map(({ text, sid }) => sid || text));
 
-    const entry: Entry = {
-      /* @ts-ignore */
-      id: row.content[1].content[0].attributes?.href.split("=")[1],
-      /* @ts-ignore */
-      number: row.content[1].content[0].content[1].content[0],
-      /* @ts-ignore */
-      startId: row.content[9].content[0].attributes.href.split("=")[1],
-      /* @ts-ignore */
-      startTimeSec: timeToSeconds(row.content[11].content[0]),
-      /* @ts-ignore */
-      endId: row.content[15].content[0].attributes.href.split("=")[1],
-      /* @ts-ignore */
-      endTimeSec: timeToSeconds(row.content[13].content[0]),
-      /* @ts-ignore */
-      infoUrl:
-        /* @ts-ignore */
-        row.content[1].content[2]?.attributes?.color === "red"
-          ? /* @ts-ignore */
-            row.content[1].content[0].attributes?.href
+  const result = textData
+    .filter((_, idx) => idx > 1) // skip 2 first rows
+    .map((item, idx) => {
+      const startStationId = item[4];
+      const finishStationId = item[7];
+
+      const startStationTime = item[5];
+      const finishStationTime = item[6];
+
+      const entry: Entry = {
+        id: routeData[idx].tid,
+        number: routeData[idx].text,
+        startId: startStationId,
+        startTimeSec: hasTimeValue(startStationTime)
+          ? timeToSeconds(startStationTime)
+          : -1,
+        endId: finishStationId,
+        endTimeSec: hasTimeValue(finishStationTime)
+          ? timeToSeconds(finishStationTime)
+          : -1,
+        middleId: "",
+        middleTimeSec: -1,
+        infoUrl: routeData[idx].hasAlert
+          ? getInfoUrl(routeData[idx].tid)
           : undefined,
-      middleId: "",
-      middleTimeSec: 0,
-    };
-
-    if (!result.map(({ number }) => number).includes(entry.number)) {
-      result.push(entry);
-    }
-  });
+      };
+      return entry;
+    });
 
   return result;
 };
@@ -162,8 +158,8 @@ export const getExternalData = async (
   const response = await fetch(url);
   const html = await response.text();
   const table = html.match(externalTablePattern)?.[0] || "";
-  const json = await HTMLToJSON(table);
-  const data = parseExternalData(json as JSONContent);
+  const parsedTable = tableToArraysFromHTMLExternal(table);
+  const data = parseExternalData(parsedTable);
 
   return data;
 };
@@ -180,7 +176,8 @@ export const getInternalData = async (
   const response = await fetch(url);
   const html = await response.text();
   const table = html.match(internalTablePattern)?.[0] || "";
-  const parsedTable = tableToArraysFromHTML(table);
+
+  const parsedTable = tableToArraysFromHTMLInternal(table);
 
   const data = parseInternalData(parsedTable, isBackSchedule);
 

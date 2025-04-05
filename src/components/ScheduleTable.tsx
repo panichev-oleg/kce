@@ -3,11 +3,7 @@ import styled from "styled-components";
 import { isInPast, secondsToTime } from "../helpers/utils";
 import { MergedSchedule, MergedScheduleItem } from "../types";
 import { getExternalStopNames } from "../helpers/data";
-import {
-  externalInfoUrl,
-  fastTransferSec,
-  slowTransferSec,
-} from "../helpers/constants";
+import { fastTransferSec, slowTransferSec } from "../helpers/constants";
 
 const TransferInfo = styled.span<{ isHighlighted?: boolean }>`
   font-size: 0.75rem;
@@ -125,7 +121,7 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
                 <StyledTd>
                   {external.infoUrl ? (
                     <InfoLink
-                      href={externalInfoUrl.replace(":href", external.infoUrl)}
+                      href={external.infoUrl}
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -214,7 +210,7 @@ export const ScheduleTableBack: React.FC<Props> = ({ data }) => {
                 <StyledTd>
                   {external.infoUrl ? (
                     <InfoLink
-                      href={externalInfoUrl.replace(":href", external.infoUrl)}
+                      href={external.infoUrl}
                       target="_blank"
                       rel="noreferrer"
                     >

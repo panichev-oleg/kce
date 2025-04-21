@@ -315,7 +315,10 @@ export const mergeSchedule = (
       externalItem.startTimeSec || externalItem.middleTimeSec;
 
     const internalScheduleSorted = internalSchedule
-      .filter(({ endTimeSec }) => externalTimeSec - endTimeSec > 0)
+      .filter(
+        ({ endTimeSec, startTimeSec }) =>
+          startTimeSec > -1 && externalTimeSec - endTimeSec > 0
+      )
       .sort(
         (a, b) =>
           externalTimeSec - a.endTimeSec - (externalTimeSec - b.endTimeSec)

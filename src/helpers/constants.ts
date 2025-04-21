@@ -12,13 +12,13 @@ export const internalStartStationName = "Выдубичи";
 export const internalMiddleStationName = "Борщаговка";
 export const internalFinishStationName = "Святошин";
 
-export const internalStartStationId = "14"; // Видубичі
-export const internalMiddleStationId = "20"; // Борщагівка
+export const internalStartStationId = "8"; // Видубичі
+export const internalMiddleStationId = "2"; // Борщагівка
 export const internalFinishStationId = "21"; // Святошин
 
 export const internalBackStartStationId = "1"; // Святошин
-export const internalBackMiddleStationId = "2"; // Борщагівка
-export const internalBackFinishStationId = "8"; // Видубичі
+export const internalBackMiddleStationId = "20"; // Борщагівка
+export const internalBackFinishStationId = "14"; // Видубичі
 
 export const scheduleDomain = `https://swrailway.gov.ua/timetable/eltrain/`;
 

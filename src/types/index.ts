@@ -28,8 +28,8 @@ export type MergedSchedule = Array<MergedScheduleItem>;
 export type AppStatus = "loading" | "loaded" | "error";
 
 export enum InternalDirection {
-  BACK = 1,
-  FORWARD = 2,
+  FORWARD = 1,
+  BACK = 2,
 }
 
 export type InternalScheduleInputCell = {

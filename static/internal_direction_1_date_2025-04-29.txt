@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x770" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x747" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -1175,7 +1175,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25209">А01, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1185,7 +1189,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25210">А02, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1195,7 +1203,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=18146">А03, 
-    <br> крім сб., нд.
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1205,7 +1217,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25211">А04, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1215,7 +1231,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25212">А05, 
-    <br> крім сб., нд.
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1225,7 +1245,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25213">А06, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1235,7 +1259,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25214">А07, 
-    <br> крім сб., нд.
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1245,7 +1273,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25215">А08, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1255,7 +1287,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25221">А09, 
-    <br> крім сб., нд.
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1265,7 +1301,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25223">А10, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1275,7 +1315,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=18037">А11, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1285,7 +1329,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=23769">А12, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1295,7 +1343,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25225">А13, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1305,7 +1357,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=18045">А14, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1315,7 +1371,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25235">А15, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1325,7 +1385,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25236">А16, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1335,7 +1399,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25238">А17, 
-    <br> крім сб., нд.
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1345,7 +1413,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25239">А18, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1355,7 +1427,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25242">А19, 
-    <br> крім сб., нд.
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1365,7 +1441,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25245">А20, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1375,7 +1455,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25247">А21, 
-    <br> крім сб., нд.
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1385,7 +1469,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=18442">А22, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1395,7 +1483,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=25249">А23, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1405,7 +1497,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=18444">А24, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -1415,7 +1511,11 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
   
   <td width="1" class="sh_line"><img src=/img/spacer.gif></td>
   <td colspan="2" class="on_right_t"><font size=-1><a class=et title='' href=".?tid=20700">А25, 
-    <br> щоденно
+    
+    <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
+    <img src="/img/eltrain-inval32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Інклюзивність">
+	
+	<br> щоденно
     
     </font></a> 
     
@@ -3309,7 +3409,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2025-04-21', maxDate: '2025-06-21', dateFormat: 'yy-mm-dd' });
+                    minDate: '2025-04-28', maxDate: '2025-06-28', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -3374,5 +3474,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.57111001014709 секунд
+<!--сгенерено за 0.7165060043335 секунд
 -->

@@ -47,11 +47,11 @@ const parseExternalData = (data: Array<Array<ExternalScheduleInputCell>>) => {
   const result = textData
     .filter((_, idx) => idx > 1) // skip 2 first rows
     .map((item, idx) => {
-      const startStationId = item[4];
-      const finishStationId = item[7];
+      const startStationId = item[5];
+      const finishStationId = item[8];
 
-      const startStationTime = item[5];
-      const finishStationTime = item[6];
+      const startStationTime = item[6];
+      const finishStationTime = item[7];
 
       const entry: Entry = {
         id: routeData[idx].tid,

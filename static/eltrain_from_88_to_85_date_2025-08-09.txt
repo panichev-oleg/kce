@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x983" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x558" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -244,7 +244,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=22947">&nbsp;<b>6602</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -264,31 +264,9 @@ td.tm {padding: 0 5 0 5;}
 <tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
 
 <tr class="onx" style="CURSOR:pointer;" height=20>
-    <td><a class=et title='' href=".?tid=26869">&nbsp;<b>6604</b></a>
-    
-    
-</td><td>	
-    
-    
-    </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2025-06-27 по 2025-12-13"></td>
-	<td>Малин – Київ-Пас. (Приміський)&nbsp;</td>
-	<td>06:49</td>
-  <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm>06:50</td>
-  <td class=tm>07:05</td>
-  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td>07:22</td>
-  <td class=tm>0:15</td>
-  <td class=qkms>12</td>
-    <td>2025-06-27&nbsp;</td><td>2025-12-13&nbsp;</td>
-</tr>
-<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
-
-<tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=25750">&nbsp;<b>6604</b></a>
-    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2025-08-01 по 2025-12-13">
     
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -302,28 +280,6 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
   <td>07:22</td>
   <td class=tm>0:15</td>
-  <td class=qkms>12</td>
-    <td>2025-08-01&nbsp;</td><td>2025-12-13&nbsp;</td>
-</tr>
-<tr class=pix><td colspan=30><img src=/img/spacer.gif></td></tr>
-
-<tr class="onx" style="CURSOR:pointer;" height=20>
-    <td><a class=et title='' href=".?tid=26873">&nbsp;<b>6606</b></a>
-    <img src=/img/attention!.png style="cursor: help;width:16px;" title="з 2025-08-01 по 2025-12-13">
-    
-</td><td>	
-    
-    
-    </td>
-	<td>щоденно&nbsp;<img src=/img/fiveday.gif style="cursor: help" title="з 2025-08-01 по 2025-12-13"></td>
-	<td>Тетерів – Борщагівка&nbsp;</td>
-	<td>07:27</td>
-  <td class=tm><a class=et href="?sid=88"><b>Ірпінь</b></a></td>
-  <td class=tm>07:29</td>
-  <td class=tm>07:45</td>
-  <td class=tm><a class=et href="?sid=85"><b>Святошин</b></a></td>
-  <td>07:48</td>
-  <td class=tm>0:16</td>
   <td class=qkms>12</td>
     <td>2025-08-01&nbsp;</td><td>2025-12-13&nbsp;</td>
 </tr>
@@ -354,7 +310,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23883">&nbsp;<b>6610</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -376,7 +332,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=26855">&nbsp;<b>6612</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -398,7 +354,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=26849">&nbsp;<b>6614</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -420,7 +376,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=26148">&nbsp;<b>6616</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -442,7 +398,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=26860">&nbsp;<b>6620</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -464,7 +420,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=25676">&nbsp;<b>6622</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -486,7 +442,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23885">&nbsp;<b>6624</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -508,7 +464,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=26853">&nbsp;<b>6626</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -612,22 +568,7 @@ $(document).ready(function(){
    
    </td>
    <td style='text-align:right'>
-<!-- HotLog -->
-<span id="hotlog_counter"></span>
-<span id="hotlog_dyn"></span>
-<script type="text/javascript">
-var hot_s = document.createElement('script');
-hot_s.type = 'text/javascript'; hot_s.async = true;
-hot_s.src = 'https://js.hotlog.ru/dcounter/2574646.js';
-hot_d = document.getElementById('hotlog_dyn');
-hot_d.appendChild(hot_s);
-</script>
-<noscript>
-<a href="https://click.hotlog.ru/?2574646" target="_blank"><img
-src="https://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2574646&amp;im=307" border="0"
-alt="HotLog"></a>
-</noscript>
-<!-- /HotLog -->
+
    </td></tr> 
   </table>
 
@@ -647,7 +588,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2025-07-30', maxDate: '2025-09-30', dateFormat: 'yy-mm-dd' });
+                    minDate: '2025-08-07', maxDate: '2025-10-07', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -712,5 +653,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.12201714515686 секунд
+<!--сгенерено за 0.080029964447021 секунд
 -->

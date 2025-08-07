@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x546" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x841" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -244,7 +244,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=26843">&nbsp;<b>6601</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -266,7 +266,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=25289">&nbsp;<b>6605</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -288,7 +288,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=26851">&nbsp;<b>6607</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -310,7 +310,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23876">&nbsp;<b>6609</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -332,7 +332,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=26848">&nbsp;<b>6613</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -354,7 +354,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=24172">&nbsp;<b>6615</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -376,7 +376,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=26150">&nbsp;<b>6673</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -398,7 +398,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=24046">&nbsp;<b>6617</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -420,7 +420,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=25295">&nbsp;<b>6619</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -442,7 +442,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="onx" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=23878">&nbsp;<b>6621</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -464,7 +464,7 @@ td.tm {padding: 0 5 0 5;}
 <tr class="on" style="CURSOR:pointer;" height=20>
     <td><a class=et title='' href=".?tid=26992">&nbsp;<b>6623</b></a>
     
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
 </td><td>	
     
     
@@ -561,7 +561,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >07:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26863"><b>6603</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Святошин – Тетерів</td>
@@ -588,7 +588,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >08:23</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=25819"><b>6671</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Немішаєве</td>
@@ -615,7 +615,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >08:23</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=25819"><b>6671</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Немішаєве</td>
@@ -642,7 +642,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >08:23</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=25819"><b>6671</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Немішаєве</td>
@@ -669,7 +669,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -696,7 +696,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -723,7 +723,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -750,7 +750,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -777,7 +777,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -804,7 +804,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -831,7 +831,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -858,7 +858,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -885,7 +885,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -912,7 +912,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -939,7 +939,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -966,7 +966,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -993,7 +993,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1020,7 +1020,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1047,7 +1047,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1074,7 +1074,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1101,7 +1101,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1128,7 +1128,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1155,7 +1155,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1182,7 +1182,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1209,7 +1209,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1236,7 +1236,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1263,7 +1263,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1290,7 +1290,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >17:35</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26993"><b>6675</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Клавдієво</td>
@@ -1317,7 +1317,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >19:06</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26880"><b>6677</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Тетерів</td>
@@ -1344,7 +1344,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >19:06</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26880"><b>6677</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Тетерів</td>
@@ -1371,7 +1371,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >19:06</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26880"><b>6677</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Тетерів</td>
@@ -1398,7 +1398,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >19:06</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26880"><b>6677</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Тетерів</td>
@@ -1425,7 +1425,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >19:06</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26880"><b>6677</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Тетерів</td>
@@ -1452,7 +1452,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >19:06</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26880"><b>6677</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>крім сб., нд.
   </td>
   <td width=135>Святошин – Тетерів</td>
@@ -1479,7 +1479,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1506,7 +1506,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1533,7 +1533,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1560,7 +1560,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1587,7 +1587,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1614,7 +1614,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1641,7 +1641,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1668,7 +1668,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1695,7 +1695,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1722,7 +1722,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1749,7 +1749,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1776,7 +1776,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1803,7 +1803,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1830,7 +1830,7 @@ td.tm {padding: 0 5 0 5;}
   <td class=tm >06:13</td>
   <td class='tm' style='background-color:#FFE2D5'>
     <a class=et title='' href=".?tid=26843"><b>6601</b></a>
-    
+    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
     <br>щоденно
   </td>
   <td width=135>Київ-Пас. (Приміський) – Коростень</td>
@@ -1903,22 +1903,7 @@ $(document).ready(function(){
    
    </td>
    <td style='text-align:right'>
-<!-- HotLog -->
-<span id="hotlog_counter"></span>
-<span id="hotlog_dyn"></span>
-<script type="text/javascript">
-var hot_s = document.createElement('script');
-hot_s.type = 'text/javascript'; hot_s.async = true;
-hot_s.src = 'https://js.hotlog.ru/dcounter/2574646.js';
-hot_d = document.getElementById('hotlog_dyn');
-hot_d.appendChild(hot_s);
-</script>
-<noscript>
-<a href="https://click.hotlog.ru/?2574646" target="_blank"><img
-src="https://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2574646&amp;im=307" border="0"
-alt="HotLog"></a>
-</noscript>
-<!-- /HotLog -->
+
    </td></tr> 
   </table>
 
@@ -1938,7 +1923,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2025-07-30', maxDate: '2025-09-30', dateFormat: 'yy-mm-dd' });
+                    minDate: '2025-08-07', maxDate: '2025-10-07', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -2003,5 +1988,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.15636205673218 секунд
+<!--сгенерено за 0.20466899871826 секунд
 -->

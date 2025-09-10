@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x975" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x449" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -72,7 +72,7 @@ input.train { font-size:16px; width:190px;}
 </font></td>
  <td width=100%><div align=center> </div></td>
 <td nowrap><div align=right>
-<a href=".?gid=1&rid=480&reverse=1&eventdate=2025-09-11&half=1&count=5"><img src=/img/lng/ukr_off.gif></a><!--<a href=".?gid=1&rid=480&reverse=1&eventdate=2025-09-11&half=1&count=5&lng=_ru"><img src=/img/lng/rus_off.gif></a>--><a href=".?gid=1&rid=480&reverse=1&eventdate=2025-09-11&half=1&count=5&lng=_en"><img src=/img/lng/eng_off.gif></a>
+<a href=".?gid=1&rid=480&reverse=1&eventdate=2025-09-17&half=1&count=5"><img src=/img/lng/ukr_off.gif></a><!--<a href=".?gid=1&rid=480&reverse=1&eventdate=2025-09-17&half=1&count=5&lng=_ru"><img src=/img/lng/rus_off.gif></a>--><a href=".?gid=1&rid=480&reverse=1&eventdate=2025-09-17&half=1&count=5&lng=_en"><img src=/img/lng/eng_off.gif></a>
 </div></td></tr>
 <TR ><TD colspan=3 >
 <center>
@@ -655,7 +655,7 @@ input.train { font-size:16px; width:190px;}
 Всі дні
 <input name="dateR" type="radio" value="1">
 На дату
-<input name="eventdate" type="text" value="2025-09-11" class='inpDate eventdate' readonly >
+<input name="eventdate" type="text" value="2025-09-17" class='inpDate eventdate' readonly >
 <input name="nofar" type="checkbox" value="1" >
 Скорочений вигляд
 
@@ -704,7 +704,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
       
     <li><a href="#tabs-map" class="tb" ><img align=center src=/img/rekl_map.png width=24> <b>НА КАРТІ</b></a></li>
     <li><a href="#tabs-notes" class="tb notes"><img align=center src="/img/rekl_list.png" width=24> Зміни руху  
-      <sup><span id=vac_cnt style='font-size:10px;color:red;font-weight:bold'>1</span></sup></a></li>
+      <sup><span id=vac_cnt style='font-size:10px;color:red;font-weight:bold'>0</span></sup></a></li>
   </ul>
   <div id="tabs-map"  style="padding:5 5 5 5;" >
      <div id="MapsID" style="margin-top:1px;width:100%;height:550px;"></div>
@@ -719,51 +719,6 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
 </style>
 <div style='text-align:left;padding: 10 10 10 10;'>
 <ol>
-
-  <li> <div class=note>11 вересня зазнають змін вечірні рейси:
-на ділянці Дарниця - Почайна -Святошин тимчасово скасовуються 
-рейси: 
-Б22 (19:31 - 20:20)
-Б23 (20:31 - 21:20)
-Б24 (21:31 - 22:20)
-Б25 (22:31 - 23:20)
-на ділянці Святошин - Почайна - Дарниця тимчасово скасовуються 
-рейси: 
-А23 (19:39 - 20:28)
-А24 (20:39 - 21:28)
-А25 (21:39 - 22:28)
-Вищезазначені рейси курсуватимуть тільки на півкільці, за маршрутом 
-Святошин - Вокзальна – Дарниця та зворотно.
-
-12 вересня зазнають змін низка ранкових та вечірніх рейсів:
-на ділянці Дарниця - Почайна -Святошин тимчасово скасовуються 
-рейси: 
-Б01 (5:31 - 6:20)
-Б23 (20:31 - 21:20)
-Б24 (21:31 - 22:20)
-Б25 (22:31 - 23:20)
-на ділянці Святошин - Почайна - Дарниця тимчасово скасовуються 
-рейси: 
-А02 (5:39 - 6:28)
-А23 (19:39 - 20:28)
-А24 (20:39 - 21:28)
-А25 (21:39 - 22:28)
-Вищезазначені вечірні рейси курсуватимуть тільки на півкільці, за 
-маршрутом Святошин - Вокзальна – Дарниця та зворотно.
-
-13 та 15 вересня:
-на ділянці Дарниця - Почайна -Святошин тимчасово скасовуються 
-рейси: 
-Б01 (5:31 - 6:20)
-на ділянці Святошин - Почайна - Дарниця тимчасово скасовуються 
-рейс:
-А02 (6:37 - 7:29) 
-Натомість рейси курсуватимуть на ділянці Дарниця - Вокзальна - 
-Святошин.
-
-</div><div class=n_descr s>Дісно з: <b>2025-09-10</b> до: <b>2025-09-15</b> / 
-  <b>Потяг:  #<a href="?tid=20701">Б25</a> #<a href="?tid=25562">Б24</a> #<a href="?tid=25561">Б23</a> #<a href="?tid=20700">А25</a> #<a href="?tid=18444">А24</a> #<a href="?tid=25249">А23</a> #<a href="?tid=25550">Б01</a> #<a href="?tid=25210">А02</a> </b></div>
-  </li>
 
 </ol>
 </div></div>
@@ -1101,7 +1056,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
 	<br> щоденно
     
     </font></a> 
-    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
+    
     
     
   </td>
@@ -1395,7 +1350,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
 	<br> щоденно
     
     </font></a> 
-    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
+    
     
     
   </td>
@@ -1409,7 +1364,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
 	<br> щоденно
     
     </font></a> 
-    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
+    
     
     
   </td>
@@ -1423,7 +1378,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
 	<br> щоденно
     
     </font></a> 
-    <font color=red title='є актуальні повідомленя'><sup><b>1</b></sup></font>
+    
     
     
   </td>
@@ -3364,5 +3319,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.82686400413513 секунд
+<!--сгенерено за 0.51578807830811 секунд
 -->

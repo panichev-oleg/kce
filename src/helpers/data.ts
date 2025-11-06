@@ -315,14 +315,28 @@ export const mergeSchedule = (
       externalItem.startTimeSec || externalItem.middleTimeSec;
 
     const internalScheduleSorted = internalSchedule
-      .filter(
-        ({ endTimeSec, startTimeSec }) =>
-          startTimeSec > -1 && externalTimeSec - endTimeSec > 0
-      )
-      .sort(
-        (a, b) =>
-          externalTimeSec - a.endTimeSec - (externalTimeSec - b.endTimeSec)
-      );
+      .filter((internalItem) => {
+        const internalTimeSec = externalItem.startTimeSec
+          ? internalItem.middleTimeSec
+          : internalItem.endTimeSec;
+
+        if (internalItem.startTimeSec === -1) {
+          return false;
+        }
+
+        return externalTimeSec - internalTimeSec > 0;
+      })
+      .sort((a, b) => {
+        const internalTimeSecKey = externalItem.startTimeSec
+          ? "middleTimeSec"
+          : "endTimeSec";
+
+        return (
+          externalTimeSec -
+          a[internalTimeSecKey] -
+          (externalTimeSec - b[internalTimeSecKey])
+        );
+      });
 
     const internalItem = internalScheduleSorted[0];
 
@@ -335,9 +349,9 @@ export const mergeSchedule = (
 
     const transferTimeSec =
       transferType === "middleToStart"
-        ? externalTimeSec - internalItem.middleTimeSec
+        ? externalItem.startTimeSec - internalItem.middleTimeSec
         : transferType === "endToMiddle"
-        ? externalTimeSec - internalItem.endTimeSec
+        ? externalItem.middleTimeSec - internalItem.endTimeSec
         : undefined;
 
     const res = {
@@ -361,11 +375,24 @@ export const mergeScheduleBack = (
       externalItem.endTimeSec || externalItem.middleTimeSec;
 
     const internalScheduleSorted = internalSchedule
-      .filter(({ startTimeSec }) => startTimeSec - externalTimeSec > 0)
-      .sort(
-        (a, b) =>
-          externalTimeSec - b.endTimeSec - (externalTimeSec - a.endTimeSec)
-      );
+      .filter((internalItem) => {
+        const internalTimeSec = externalItem.endTimeSec
+          ? internalItem.middleTimeSec
+          : internalItem.startTimeSec;
+
+        return internalTimeSec - externalTimeSec > 0;
+      })
+      .sort((a, b) => {
+        const internalTimeSecKey = externalItem.endTimeSec
+          ? "middleTimeSec"
+          : "startTimeSec";
+
+        return (
+          a[internalTimeSecKey] -
+          externalTimeSec -
+          (b[internalTimeSecKey] - externalTimeSec)
+        );
+      });
 
     const internalItem = internalScheduleSorted[0];
 
@@ -382,6 +409,7 @@ export const mergeScheduleBack = (
         : transferType === "middleToStart"
         ? internalItem.startTimeSec - externalTimeSec
         : undefined;
+
     const res = {
       externalScheduleRow: externalItem,
       internalScheduleRow: internalItem,

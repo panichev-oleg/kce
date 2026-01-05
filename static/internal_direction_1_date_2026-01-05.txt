@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="keywords" content="Південно-Західна залізниця,розклад, поїзди, приміських поїздів, розклад руху електропоїздів, розклад руху поїздів, укрзалізниця">
-<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x979" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/modules/css/eltrain-way.css"><link rel="stylesheet" type="text/css" href="/modules/js/jquery-ui/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/leaflet.css"><link rel="stylesheet" type="text/css" href="/modules/js/leaflet/Control.FullScreen.css"><link rel="stylesheet" type="text/css" href="/modules/css/eltrain.css"><link rel="stylesheet" type="text/css" href="/modules/css/style.css"><link rel="stylesheet" type="text/css" href="/modules/css/mystyle.css"><link rel="stylesheet" type="text/css" href="/modules/css/tpagemenu/css/site-top.css"><script language="JavaScript" src="/modules/js/jquery.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/jquery-ui.min.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/jquery-ui/datepicker-uk.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/rsi_autocomplete_class.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/leaflet.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/leaflet/Control.FullScreen.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/direction-atmap.js?v=x65" type="text/javascript"></script><script language="JavaScript" src="/modules/css/tpagemenu/js/TPageMenu.js" type="text/javascript"></script><script language="JavaScript" src="/modules/js/utils.js" type="text/javascript"></script>
 </head>
 <BODY onload="" bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 align="center" marginheight="0" marginwidth="0" rigthmargin="0">
 <TABLE width="990" HEIGHT="100%" cellspacing="0" cellpadding="0" align=center>
@@ -1059,7 +1059,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
     <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
     
 	
-	<br> по пн., вт., ср.
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1087,7 +1087,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
     <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
     
 	
-	<br> по пн., вт., ср.
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1115,7 +1115,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
     <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
     
 	
-	<br> по пн., вт., ср.
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1143,7 +1143,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
     <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
     
 	
-	<br> по пн., вт., ср.
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1255,7 +1255,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
     <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
     
 	
-	<br> по пн., вт., ср.
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1283,7 +1283,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
     <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
     
 	
-	<br> по пн., вт., ср.
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -1311,7 +1311,7 @@ td.course {-webkit-text-size-adjust:none; text-size-adjust:none;}
     <img src="/img/eltrain-usb32.png" onclick="alert($(this).attr('title'));" style="cursor: help;width:16px" title="Столики з USB-роз’ємами для зарядки">
     
 	
-	<br> по пн., вт., ср.
+	<br> крім сб., нд.
     
     </font></a> 
     
@@ -3246,7 +3246,7 @@ $(document).ready(function(){
   
   $( ".eventdate" )
       .datepicker({ changeMonth: true, changeYear: true,  monthNamesShort: $.datepicker.regional['uk'].monthNames,  
-                    minDate: '2026-01-02', maxDate: '2026-03-02', dateFormat: 'yy-mm-dd' });
+                    minDate: '2026-01-05', maxDate: '2026-03-05', dateFormat: 'yy-mm-dd' });
   $('form').each (function (i, e) {
     var it = this;
     var $dateR = $('input[name="dateR"]', this); 
@@ -3311,5 +3311,5 @@ $(document).ready(function(){
 </TABLE>
 </body>
 </html>
-<!--сгенерено за 0.22846102714539 секунд
+<!--сгенерено за 0.31524896621704 секунд
 -->

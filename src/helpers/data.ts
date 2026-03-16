@@ -20,16 +20,18 @@ import {
   internalFinishStationId,
   internalFinishStationName,
   internalMiddleStationId,
-  internalStartStationId,
   internalMiddleStationName,
+  internalStartStationId,
   internalStartStationName,
   internalTablePattern,
 } from "./constants";
-import { getInfoUrl, hasTimeValue, timeToSeconds } from "./utils";
 import {
   tableToArraysFromHTMLExternal,
   tableToArraysFromHTMLInternal,
 } from "./parser";
+import { getInfoUrl, hasTimeValue, timeToSeconds } from "./utils";
+
+const PROXY_BASE_URL = "https://kce-proxy.kce-panichevoleg.workers.dev";
 
 const parseExternalData = (data: Array<Array<ExternalScheduleInputCell>>) => {
   const routeData = data
@@ -78,7 +80,7 @@ const parseExternalData = (data: Array<Array<ExternalScheduleInputCell>>) => {
 
 const parseInternalData = (
   data: Array<Array<InternalScheduleInputCell>>,
-  isBackSchedule: boolean
+  isBackSchedule: boolean,
 ) => {
   const resultObj: Record<string, Entry> = {};
 
@@ -130,8 +132,8 @@ const parseInternalData = (
         stationIdStr === startStationId
           ? "start"
           : stationIdStr === middleStationId
-          ? "middle"
-          : "end";
+            ? "middle"
+            : "end";
 
       resultObj[idx] = {
         ...(resultObj[idx] || {}),
@@ -151,9 +153,9 @@ const parseInternalData = (
 export const getExternalData = async (
   fromId: string,
   toId: string,
-  date: string
+  date: string,
 ) => {
-  const url = `${process.env.PUBLIC_URL}/static/eltrain_from_${fromId}_to_${toId}_date_${date}.txt`;
+  const url = `${PROXY_BASE_URL}/external?sid1=${fromId}&sid2=${toId}&eventdate=${date}`;
 
   const response = await fetch(url);
   const html = await response.text();
@@ -166,12 +168,12 @@ export const getExternalData = async (
 
 export const getInternalData = async (
   date: string,
-  isBackSchedule: boolean
+  isBackSchedule: boolean,
 ) => {
-  const direction = isBackSchedule
+  const reverse = isBackSchedule
     ? InternalDirection.BACK
     : InternalDirection.FORWARD;
-  const url = `${process.env.PUBLIC_URL}/static/internal_direction_${direction}_date_${date}.txt`;
+  const url = `${PROXY_BASE_URL}/internal?reverse=${reverse}&eventdate=${date}`;
 
   const response = await fetch(url);
   const html = await response.text();
@@ -188,18 +190,18 @@ export const getExternalSchedule = async (date: string) => {
   const dataFromStart = await getExternalData(
     externalStartStationId,
     externalFinishStationId,
-    date
+    date,
   );
 
   const dataFromMiddle = await getExternalData(
     externalMiddleStationId,
     externalFinishStationId,
-    date
+    date,
   );
 
   const result: Array<Entry> = dataFromMiddle.map((middleEntry) => {
     const startEntry = dataFromStart.find(
-      ({ number }) => number === middleEntry.number
+      ({ number }) => number === middleEntry.number,
     );
 
     const mergedEntry: Entry = {
@@ -221,18 +223,18 @@ export const getExternalBackSchedule = async (date: string) => {
   const dataToMiddle = await getExternalData(
     externalFinishStationId,
     externalMiddleStationId,
-    date
+    date,
   );
 
   const dataToFinish = await getExternalData(
     externalFinishStationId,
     externalStartStationId,
-    date
+    date,
   );
 
   const result: Array<Entry> = dataToMiddle.map((middleEntry) => {
     const finishEntry = dataToFinish.find(
-      ({ number }) => number === middleEntry.number
+      ({ number }) => number === middleEntry.number,
     );
 
     const mergedEntry: Entry = {
@@ -300,7 +302,7 @@ export const getExternalStopNames = (data: Array<Entry>) => {
 
 export const getInternalSchedule = async (
   date: string,
-  isBackSchedule: boolean
+  isBackSchedule: boolean,
 ) => {
   const data = await getInternalData(date, isBackSchedule);
   return data;
@@ -308,7 +310,7 @@ export const getInternalSchedule = async (
 
 export const mergeSchedule = (
   internalSchedule: Array<Entry>,
-  externalSchedule: Array<Entry>
+  externalSchedule: Array<Entry>,
 ): MergedSchedule => {
   const result = externalSchedule.map((externalItem) => {
     const externalTimeSec =
@@ -344,15 +346,15 @@ export const mergeSchedule = (
       internalItem?.middleTimeSec && externalItem.startTimeSec
         ? "middleToStart"
         : internalItem?.endTimeSec && externalItem.middleTimeSec
-        ? "endToMiddle"
-        : undefined;
+          ? "endToMiddle"
+          : undefined;
 
     const transferTimeSec =
       transferType === "middleToStart"
         ? externalItem.startTimeSec - internalItem.middleTimeSec
         : transferType === "endToMiddle"
-        ? externalItem.middleTimeSec - internalItem.endTimeSec
-        : undefined;
+          ? externalItem.middleTimeSec - internalItem.endTimeSec
+          : undefined;
 
     const res = {
       externalScheduleRow: externalItem,
@@ -368,7 +370,7 @@ export const mergeSchedule = (
 
 export const mergeScheduleBack = (
   internalSchedule: Array<Entry>,
-  externalSchedule: Array<Entry>
+  externalSchedule: Array<Entry>,
 ): MergedSchedule => {
   const result = externalSchedule.map((externalItem) => {
     const externalTimeSec =
@@ -400,15 +402,15 @@ export const mergeScheduleBack = (
       internalItem?.middleTimeSec && externalItem.endTimeSec
         ? "endToMiddle"
         : internalItem?.startTimeSec && externalItem.middleTimeSec
-        ? "middleToStart"
-        : undefined;
+          ? "middleToStart"
+          : undefined;
 
     const transferTimeSec =
       transferType === "endToMiddle"
         ? internalItem.middleTimeSec - externalTimeSec
         : transferType === "middleToStart"
-        ? internalItem.startTimeSec - externalTimeSec
-        : undefined;
+          ? internalItem.startTimeSec - externalTimeSec
+          : undefined;
 
     const res = {
       externalScheduleRow: externalItem,

@@ -99,6 +99,11 @@ function App() {
 
   return (
     <div className="App">
+      {status === "loading" && (data || dataBack) && (
+        <div className="App-loader-overlay">
+          <div className="App-loader-spinner" />
+        </div>
+      )}
       <h2>KCE</h2>
       <UnstyledLink href="#" onClick={gotoPrevDay}>
         <ArrowLeft />

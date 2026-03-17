@@ -1,3 +1,5 @@
+/* === General app layout & typography === */
+
 .App {
   padding: 1rem;
   position: relative;
@@ -13,6 +15,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+/* === Loader overlay & spinner === */
 
 .App-loader-overlay {
   position: fixed;
@@ -39,6 +43,8 @@
   }
 }
 
+/* === Legacy CRA header styles (kept for compatibility) === */
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -61,4 +67,88 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* === Date picker / calendar === */
+
+.App-date-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.App-date-input {
+  display: none;
+}
+
+.App-calendar {
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  z-index: 20;
+}
+
+.App-calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  gap: 0.5rem;
+}
+
+.App-calendar-header button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 0.25rem;
+}
+
+.App-calendar-today {
+  margin-left: auto;
+  font-size: 0.7rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 0.15rem 0.4rem;
+  background: #f8f8f8;
+}
+
+.App-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1.8rem);
+  gap: 0.15rem;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.App-calendar-weekday {
+  font-weight: 600;
+}
+
+.App-calendar-day {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0.15rem 0;
+}
+
+.App-calendar-day:hover {
+  background: #f0f0f0;
+}
+
+.App-calendar-day-selected {
+  background: #007bff;
+  color: #ffffff;
+}
+
+.App-calendar-day-today {
+  outline: 1px solid #007bff;
+}
+
+.App-calendar-cell-empty {
+  visibility: hidden;
 }

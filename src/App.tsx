@@ -35,6 +35,7 @@ import {
 import { getExternalUrl, getInternalUrl } from "./helpers/utils";
 import { UnstyledLink, Link, ScheduleList } from "./components/shared";
 import { ArrowLeft, ArrowRight } from "./components/Arrow";
+import { DatePicker } from "./components/DatePicker";
 
 function App() {
   const [data, setData] = React.useState<MergedSchedule>();
@@ -53,12 +54,11 @@ function App() {
     setDate((date) => new Date(date.getTime() - 24 * 60 * 60 * 1000));
   };
 
-  const gotoToday = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setDate(new Date());
-  };
-
-  const viewDate = date.toISOString().split("T")[0];
+  const viewDate = [
+    date.getFullYear(),
+    String(date.getMonth() + 1).padStart(2, "0"),
+    String(date.getDate()).padStart(2, "0"),
+  ].join("-");
 
   React.useEffect(() => {
     setStatus("loading");
@@ -109,12 +109,7 @@ function App() {
         <ArrowLeft />
       </UnstyledLink>
 
-      <u>
-        <UnstyledLink href="#" onClick={gotoToday}>
-          Дата: {viewDate} (
-          {date.toLocaleDateString("RU-ru", { weekday: "short" })})
-        </UnstyledLink>
-      </u>
+      <DatePicker date={date} onChange={setDate} />
 
       <UnstyledLink href="#" onClick={gotoNextDay}>
         <ArrowRight />

@@ -27,6 +27,24 @@ export type MergedSchedule = Array<MergedScheduleItem>;
 
 export type AppStatus = "loading" | "loaded" | "error";
 
+export type ScheduleCacheEntry = {
+  status: AppStatus;
+  data?: MergedSchedule;
+  dataBack?: MergedSchedule;
+};
+
+export type ScheduleCache = Record<string, ScheduleCacheEntry>;
+export type InFlightScheduleRequests = Partial<
+  Record<string, Promise<void>>
+>;
+
+export type UseScheduleDataResult = {
+  data?: MergedSchedule;
+  dataBack?: MergedSchedule;
+  status: AppStatus;
+  viewDate: string;
+};
+
 export enum InternalDirection {
   FORWARD = 1,
   BACK = 2,

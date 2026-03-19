@@ -35,3 +35,4 @@ export const internalTablePattern =
 
 export const fastTransferSec = 2 * 60;
 export const slowTransferSec = 20 * 60;
+export const schedulePrefetchDaysCount = 3;
